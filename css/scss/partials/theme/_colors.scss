@@ -1,0 +1,20 @@
+$colors: (
+	"yellow":	#ffd000,
+	"blue":		#8bd0ea,
+	"orange":	#ed6c4c,
+	"karki":	#a4a999,	
+	"beige":	#ededea,
+	"spruce":	#324647,
+	"black":	#1f2222,
+	"white":	#ffffff,
+);
+
+@function color($color-name) {
+ 	@return map-get($colors, $color-name);
+}
+
+@function grey($percent) {
+	@return lighten(black, $percent);
+}
+
+$semiSpruce: rgba(color("spruce"), 0.7);

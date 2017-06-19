@@ -1,0 +1,79 @@
+.delay1 {
+	animation-delay: $speed;
+}
+
+.delay2 {
+	animation-delay: $speed*2;	
+}
+
+.delay3 {
+	animation-delay: $speed*3;
+}
+
+.delay4 {
+	animation-delay: $speed*4;
+}
+
+.respond {
+	display:none;
+	@media #{$respond} {
+		display: block;
+	}
+}
+
+.mobile {
+	display:none;
+	@media #{$mobile} {
+		display: block;
+	}
+}
+
+.device {
+	display:none;
+	@media #{$device} {
+		display: block;
+	}
+}
+
+.tablet {
+	display:none;
+	@media #{$tablet} {
+		display: block;
+	}
+}
+
+.tabtop {
+	display:none;
+	@media #{$tabtop} {
+		display: block;
+	}
+}
+
+.desktop {
+	display:none;
+	@media #{$desktop} {
+		display: block;
+	}
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.full, .full * {
+	max-width:none;
+}
+
+/* background colours */
+@each $name, $hex in $colors {
+	.#{$name} {
+		background-color:#{$hex};
+	}
+	.color-#{$name} {
+		color:#{$hex} !important;
+	}
+}

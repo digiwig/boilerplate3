@@ -1,0 +1,89 @@
+@mixin respond($gutterX, $name, $bp, $columns) {
+	@media #{$bp} {			
+		@each $column in $columns {
+			$i: index($columns, $column);
+			@for $i from 1 through $column {
+				$w:($width/$column) * $i;	
+				$percentage:percentage($w/$width);
+				&.#{$name}-#{$i}-#{$column} {
+					width: calc(#{$percentage} - #{$gutterX}) !important;
+					width: -webkit-calc(#{$percentage} - #{$gutterX}) !important;					
+				}
+			}
+		}
+	}
+}
+
+@each $grid, $map in $grids {
+	.#{$grid} {
+		$gutter: map-get($map, gutter);
+		$gutterX: map-get($map, gutterX);
+		$gutterY: map-get($map, gutterY);
+		$respondX: map-get($map, respondX);
+		$respondY: map-get($map, respondY);			
+		$columns: map-get($map, column);
+		$row: map-get($map, row);
+		$break-units: map-get($map, break-units);
+		$max-width: map-get($map, max-width);
+		max-width:$max-width + $gutterX*2;
+		margin:auto;
+		padding:0 $gutterX;
+		overflow:hidden;		
+		&.edge {
+			padding:0;
+			max-width:$max-width;
+		}
+		&.full {
+			max-width:none;
+		}
+		.#{$row} {
+			width:calc(100% + #{$gutterX});
+			box-sizing:content-box;	
+			display: flex;
+			flex-wrap: wrap;			
+
+			&.single {
+				> * {
+					margin-bottom: 0 !important;
+				}
+			}			
+			> * {
+				display: flex;
+				flex-wrap: wrap;
+				margin:0 $gutterX $gutterY 0;
+				@if map-get($map, auto) {
+					@for $count from 1 through nth($columns, length($columns)) {
+						&:first-child:nth-last-child(#{$count}), 
+						&:first-child:nth-last-child(#{$count}) ~ * {
+							width: calc(#{100/$count}#{"%"} - #{$gutterX});
+						}
+					}
+				}
+
+				@each $column in $columns {
+					$i: index($columns, $column);
+					@for $i from 1 through $column {
+						$w:($width/$column) * $i;	
+						$percentage:percentage($w/$width);
+						&.u-#{$i}-#{$column} {
+	   						width: calc(#{$percentage} - #{$gutterX}) !important;
+	    					width: -webkit-calc(#{$percentage} - #{$gutterX}) !important;					
+						}
+					}
+				}
+				@each $class, $bp in $break-units {
+					@include respond($gutterX, $class, $bp, $columns);
+				}
+			}
+			@if $respondY {
+				//&.respondXY {
+					> * {
+						@media #{$respond} {
+							margin:0 $respondX $respondY 0;
+						}
+					}
+				//}
+			}
+		}
+	}
+}

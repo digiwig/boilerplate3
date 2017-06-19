@@ -1,0 +1,182 @@
+$devmode: false;				/* view semi transparent bg on all elements */
+
+/* MANDATORY BASICS */
+
+$width:1024px;					/* the max-width, desktop mode */
+$speed:0.15s;					/* global default transition speed */
+$size:14px;						/* html rem/body em value */
+$mobile-size:$size*1;
+
+
+/* GRID SETTINGS */
+
+$grids: (
+
+	/*
+	selector: (								//class name for this grid type.
+		gutterX:	15px,					//horizontal margin between grid units.
+		gutterY:	15px,					//vertical margin between grid units/rows.
+		respondX:	30px,					//optional value for horizontal margin between grid units at the global $respond breakpoint (defined in media.scss), only works when class .respondXY is used on grid a grid row element.
+		respondY:	30px,					//same as above but for vertical margin between grid units.
+		column:		12,						//the number of columns used in this grid config. Use u-6-12 for a 50% width grid unit, u-4-12 for a third etc. Use m-12-12 to make that grid unit change width at the mobile breakpoint.
+		row:		row,					//class name for the grid rows in this grid config.
+		auto:		true,					//allow grid units to inherit a defined width based on the nth number of grid units in that row. So a row of 4 grid units without a defined unit class would inherit u-3-12, in this column config.
+		max-width:	1190px,					///max width this grid can be. All grids span 100% width.
+		break-units: (						//Define selector names and breakpoints. Eg "t: $tablet" - means a class of t-*-* selectors will be generated and will only become usable within the $tablet range (defined in media.scss).
+			m:		$respond,
+			t: 		$tablet,
+			tp:		$tablet $portrait,
+			d:		$desktop,
+		)
+	)
+
+	*/
+
+	grid15: (
+		gutterX: 15px,
+		gutterY: 15px,
+		column: 12,
+		row: row,
+		auto: true,
+		max-width: $width,
+		break-units: (
+			m: $respond,
+			mp: $respond $portrait,
+			ml: $respond $landscape,
+			ml-tp: #{$respond $landscape, $tablet $portrait},
+			t: $tablet,
+			tp: $tablet $portrait,
+			tl: $tablet $landscape,
+		)
+	),
+	grid0: (
+		gutterX: 0px,
+		gutterY: 0px,
+		respondX: 20px,
+		respondY: 20px,
+		column: 12,
+		row: row,
+		auto: false,
+		max-width: $width,
+		break-units: (
+			m: $respond,
+			mp: $respond $portrait,
+			ml: $respond $landscape,
+			ml-tp: #{$respond $landscape, $tablet $portrait},
+			t: $tablet,
+			tp: $tablet $portrait,
+			tl: $tablet $landscape,
+		)
+	),
+);
+
+/* LIBRARIES */
+
+$icons:(
+	social: true,
+	arrows: true,
+	ui: true,
+	symbols: false
+);
+
+$animations: (
+	bounce: false,
+	flash: false,
+	pulse: false,
+	rubberBand: false,
+	shake: false,
+	swing: false,
+	tada: false,
+	wobble: false,
+	jello: false,
+	bounceIn: false,
+	bounceInDown: false,
+	bounceInLeft: false,
+	bounceInRight: false,
+	bounceInUp: false,
+	bounceOut: false,
+	bounceOutDown: false,
+	bounceOutLeft: false,
+	bounceOutRight: false,
+	bounceOutUp: false,
+	fadeIn: false,
+	fadeInDown: false,
+	fadeInDownBig: false,
+	fadeInLeft: false,
+	fadeInLeftBig: false,
+	fadeInRight: false,
+	fadeInRightBig: false,
+	fadeInUp: false,
+	fadeInUpBig: false,
+	fadeOut: false,
+	fadeOutDown: false,
+	fadeOutDownBig: false,
+	fadeOutLeft: false,
+	fadeOutLeftBig: false,
+	fadeOutRight: false,
+	fadeOutRightBig: false,
+	fadeOutUp: false,
+	fadeOutUpBig: false,
+	flip: false,
+	flipInX: false,
+	flipInY: false,
+	flipOutX: false,
+	flipOutY: false,
+	lightSpeedIn: false,
+	lightSpeedOut: false,
+	rotateIn: false,
+	rotateInDownLeft: false,
+	rotateInDownRight: false,
+	rotateInUpLeft: false,
+	rotateInUpRight: false,
+	rotateOut: false,
+	rotateOutDownLeft: false,
+	rotateOutDownRight: false,
+	rotateOutUpLeft: false,
+	rotateOutUpRight: false,
+	hinge: false,
+	rollIn: false,
+	rollOut: false,
+	zoomIn: false,
+	zoomInDown: false,
+	zoomInLeft: false,
+	zoomInRight: false,
+	zoomInUp: false,
+	zoomOut: false,
+	zoomOutDown: false,
+	zoomOutLeft: false,
+	zoomOutRight: false,
+	zoomOutUp: false,
+	slideInDown: false,
+	slideInLeft: false,
+	slideInRight: false,
+	slideInUp: false,
+	slideOutDown: false,
+	slideOutLeft: false,
+	slideOutRight: false,
+	slideOutUp: false
+);
+
+/* PLUGINS */
+
+$cookie-notice:(					
+	active: true,
+	placement: top,
+	position: fixed,
+	background: #000000,
+	color: #ffffff,
+	transparency: 0.8
+);
+
+$notify-bar:false;
+
+/* DEVELOPMENT TOOLS */
+
+@if $devmode {
+	* {
+		background-color:#ccc;
+		background-color: rgba(0, 0, 0, 0.1) !important;
+		filter: alpha(opacity=50);
+		color:#fff;
+	}
+}

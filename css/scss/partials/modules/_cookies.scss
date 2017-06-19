@@ -1,0 +1,88 @@
+@if map-get($cookie-notice, "active") {
+	#cookies {
+		background:rgba(map-get($cookie-notice, background), map-get($cookie-notice, transparency));
+		display:block;
+		z-index:999;
+		position:map-get($cookie-notice, position);
+		height:auto;
+		width:100%;
+
+		overflow:hidden;
+		-webkit-transform: translateZ(0);
+		@include transition(all,0.25s,ease-in-out); 
+		#{map-get($cookie-notice, placement)}:-100%;
+		&.show {
+			#{map-get($cookie-notice, placement)}:0;
+			@include transition(all,1s,ease-in-out);
+		}
+		> div {
+			max-width:$width + 30px; margin:auto; display:table; width:100%;
+			padding:15px;
+			> div {
+				display:table-cell; 
+				vertical-align: top;
+				p {
+					padding-left:40px;
+					padding-right:20px;
+					font-size:14px;
+					color:map-get($cookie-notice, color); 				
+					background: url(../images/icons/information.png) no-repeat left center;
+					background-size:30px 30px;
+					line-height:1.2em;				
+					span {
+						display:inline-block;
+						vertical-align:bottom;
+						@media #{$device} #{$portrait} {
+							display:inline;
+						}
+					}
+					a {
+						color:map-get($cookie-notice, color);
+						&:after {
+							display: none;
+						}
+					}
+				}
+				.close {
+					border-radius:5px;
+					background:rgba(map-get($cookie-notice, color), 0.5);
+					display:block;
+					width:150px;
+					float:right;
+					padding:7px;
+					text-align: center;
+					cursor: pointer;
+					line-height:10px;
+					transition:all 0.25s ease-in-out; 			
+					&:before {
+						font-size:10px;
+						position:relative;
+						top:-1px;
+						left:-5px;
+					}
+					&:hover {
+						background:map-get($cookie-notice, color)
+					}
+				}
+			}
+			@media #{$mobile} {
+				display: block;	
+				> div {
+					display:block;
+					> div {
+						display:block;
+					}
+					p {
+						padding-right:0;
+					}
+					&:last-child {
+						margin-top:15px;
+						a {
+							width:100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

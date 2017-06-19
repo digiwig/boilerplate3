@@ -1,0 +1,40 @@
+#notify {
+	position: fixed;
+	z-index: 101;
+	top: -35px;
+	left: 0;
+	right: 0;
+	background: #333;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	-moz-transition: all 0.15s ease-in-out;
+	-ms-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out; 
+	&.show {
+		-webkit-animation: slideDown 3s 0s 1 ease forwards;
+		animation: slideDown 3s 0s 1 ease forwards;
+	}	
+}
+
+@-webkit-keyframes slideDown {
+	0%, 100% {
+		-webkit-transform: translateY(0px); 
+	}
+	10%, 90% {
+		-webkit-transform: translateY(35px); 
+	}
+}
+
+@keyframes slideDown {
+	0%, 100% {
+		transform: translateY(0px); 
+	}
+	10%, 90% {
+		transform: translateY(35px);
+	}
+}

@@ -1,0 +1,4 @@
+# See git's documentation for more info on .gitignore files:
+# http://kernel.org/pub/software/scm/git/docs/gitignore.html
+
+.sass-cache
