@@ -2,3 +2,4 @@
 # http://kernel.org/pub/software/scm/git/docs/gitignore.html
 
 .sass-cache
+.DS_Store

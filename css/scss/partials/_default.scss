@@ -4,7 +4,7 @@ header {
 	button {
 		display:none;
 	}
-	@media #{$mobile} {
+	@media #{$respond} {
 		height:55px;
 		background:darken(#276f89, 10%);
 		position:fixed;
@@ -43,7 +43,7 @@ header {
 }
 
 nav {
-	@media #{$mobile} {
+	@media #{$respond} {
 		right: -265px;
 		transition:opacity $speed ease-in-out;
 		position: fixed;
@@ -223,7 +223,7 @@ nav {
 main {
 	background:#276f89;
 	padding:$margin 0 0 0;
-	@media #{$mobile} {
+	@media #{$respond} {
 		position:absolute;
 		top:55px;
 		right:0;

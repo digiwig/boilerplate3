@@ -9,15 +9,6 @@
   outline:none;
 }
 
-*:after {
-	content: "";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden; 
-	overflow:hidden;
-}
-
 * {
 	-webkit-tap-highlight-color:transparent;
 }

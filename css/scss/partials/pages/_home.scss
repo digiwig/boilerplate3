@@ -21,4 +21,23 @@
 		
 		}
 	}
+
+	.component-row {
+		& + .component-row {
+			margin-top:$margin;
+		}
+
+		h1 {
+			color:white;
+			font-size:2em;
+			border-bottom:1px solid white;
+			padding-bottom: $padding;
+			margin-bottom: $margin;
+		}
+	}
+}
+
+main > * {
+	margin:auto;
+	max-width: $width;
 }

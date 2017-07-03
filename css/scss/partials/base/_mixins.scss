@@ -1,3 +1,16 @@
+@mixin hover() {
+	@media #{$default} {
+		&:hover {
+			@content;
+		}
+	}
+	@media #{$device} {
+		&:active {
+			@content;
+		}
+	}	
+}
+
 @mixin vendors($name, $argument) {
   -webkit-#{$name}: #{$argument};
   -ms-#{$name}: #{$argument};

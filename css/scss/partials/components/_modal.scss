@@ -1,0 +1,70 @@
+.modal-toggle {
+	display: none;
+	&:checked {
+		& + .modal-window-outer {
+			opacity:1;
+			pointer-events:auto;
+			.modal-window-inner {
+				transform: translateY(0);
+			}
+		}
+	}
+}
+
+.modal-window-outer {
+	position:fixed;
+	z-index:1;
+	background:rgba(#000,0.5);
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	max-width: none;
+	opacity:0;
+	pointer-events:none;
+	transition: all $speed ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:$padding;
+
+	.modal-window-inner {
+		width:50%;
+		height:500px;
+		background:white;
+		border-radius:5px;
+		padding:$padding;
+		transition: all $speed ease-in-out;
+		transform: translateY(15%);
+
+		@media #{$respond} {
+			width:100%;
+		}
+
+		.modal-button {
+			position: absolute;
+			top:$padding;
+			right:$padding;
+			@media #{$respond} {
+				font-size:2em;
+			}
+			@include hover {
+				opacity:0.5;
+			}
+		}
+	}
+}
+
+/* Usage
+
+		<label class="modal-button button" for="modal-window-1">Click Me</label>	
+		<input type="checkbox" class="modal-toggle" id="modal-window-1">
+		<div class="modal-window-outer">
+			<div class="modal-window-inner">
+				<label class="modal-button icon-ui-cancel" for="modal-window-1"></label>
+				<h2>I am a modal window</h2>
+			</div>
+		</div>
+
+*/
+

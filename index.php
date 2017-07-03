@@ -27,9 +27,45 @@
 <?php include("inc/nav.php");?>
 </nav>
 <main>
-	<?php include("inc/main.php");?>
-	<footer></footer>
+	
+	<div class="component-row">
+		<h1>Button, Modal</h1>
+		<label class="modal-button button" for="modal-window-1">Click Me</label>	
+		<input type="checkbox" class="modal-toggle" id="modal-window-1">
+		<div class="modal-window-outer">
+			<div class="modal-window-inner">
+				<label class="modal-button icon-ui-cancel" for="modal-window-1"></label>
+				<h2>I am a modal window</h2>
+			</div>
+		</div>
+	</div>
+	<div class="component-row">
+		<h1>Accordions</h1>
+		<div class="accordion">
+			<input type="checkbox" id="accordion-1">
+			<label for="accordion-1" class="accordion-label">Accordion Title</label>
+			<div class="accordion-content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		<div class="accordion">
+			<input type="checkbox" id="accordion-2">
+			<label for="accordion-2" class="accordion-label">Accordion Title</label>
+			<div class="accordion-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+		</div>
+		<div class="accordion">
+			<input type="checkbox" id="accordion-3">
+			<label for="accordion-3" class="accordion-label">Accordion Title</label>
+			<div class="accordion-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+		</div>
+	</div>
+	<div class="component-row">
+		<h1>Grids</h1>
+		<?php include("inc/main.php");?>
+	</div>
+	
 </main>
+<footer></footer>
 <script type="text/javascript">
 (function() {
 	function getScript(url,success){
@@ -56,6 +92,7 @@
 		getScript("/js/scripts.min.js", function() {
 			getScript("/js/custom/cookies.js");
 			getScript("/js/custom/navigation.js");
+			getScript("/js/components.js");
 		});
 	});
 })();

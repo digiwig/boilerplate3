@@ -25,6 +25,11 @@
 	@import "partials/modules/_cookies.scss";
 	@import "partials/modules/_helpers.scss";
 	@import "partials/modules/_notify-bar.scss";
+
+	// Components
+	@import "partials/components/_accordion.scss";
+	@import "partials/components/_modal.scss";
+	@import "partials/components/_buttons.scss";
 			
 	// Layout
 	@import "partials/layout/_body.scss";
