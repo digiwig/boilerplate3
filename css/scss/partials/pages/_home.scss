@@ -1,28 +1,14 @@
 .home {
+
 	@import "partials/_default.scss";
-	[class^="row"] {
-		> * {
-			
-			min-height:100px;
-			background:#fff;
-			text-align:center;
-			//line-height:100px;
-			align-content:center;
-			justify-content: center;
-			overflow:hidden;
-			&:before {content:"?";}
-			@media #{$mobile} {&:before {content:"mobile";}}
-			@media #{$tablet} {&:before {content:"tablet";}}
-			@media #{$desktop} {&:before {content:"desktop";}}
-			@media #{$mobile} #{$portrait} {&:before {content:"mobile portrait";}}
-			@media #{$device} #{$landscape} {&:before {content:"device landscape";}}
-			@media #{$tablet} #{$portrait} {&:before {content:"tablet portrait";}}
-			@media #{$tablet} #{$landscape} {&:before {content:"tablet landscape";}}
-		
-		}
-	}
+
+	main {
+		padding:$padding;
+	}	
 
 	.component-row {
+		margin:auto;
+		max-width: $width;		
 		& + .component-row {
 			margin-top:$margin;
 		}
@@ -35,9 +21,24 @@
 			margin-bottom: $margin;
 		}
 	}
-}
 
-main > * {
-	margin:auto;
-	max-width: $width;
+	[class^="row"] {
+		> * {		
+			min-height:100px;
+			background:#fff;
+			text-align:center;
+			align-content:center;
+			justify-content: center;
+			overflow:hidden;
+			&:before {content:"?";}
+			@media #{$mobile} {&:before {content:"mobile";}}
+			@media #{$tablet} {&:before {content:"tablet";}}
+			@media #{$desktop} {&:before {content:"desktop";}}
+			@media #{$mobile} #{$portrait} {&:before {content:"mobile portrait";}}
+			@media #{$device} #{$landscape} {&:before {content:"device landscape";}}
+			@media #{$tablet} #{$portrait} {&:before {content:"tablet portrait";}}
+			@media #{$tablet} #{$landscape} {&:before {content:"tablet landscape";}}
+		}
+	}
+	
 }

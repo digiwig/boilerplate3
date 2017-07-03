@@ -6,8 +6,7 @@
 				$w:($width/$column) * $i;	
 				$percentage:percentage($w/$width);
 				&.#{$name}-#{$i}-#{$column} {
-					width: calc(#{$percentage} - #{$gutterX}) !important;
-					width: -webkit-calc(#{$percentage} - #{$gutterX}) !important;					
+					width: calc(#{$percentage} - #{$gutterX}) !important;					
 				}
 			}
 		}
@@ -26,31 +25,19 @@
 		$break-units: map-get($map, break-units);
 		$max-width: map-get($map, max-width);
 		max-width:$max-width + $gutterX*2;
-		margin:auto;
-		padding:0 $gutterX;
 		overflow:hidden;		
-		&.edge {
-			padding:0;
-			max-width:$max-width;
-		}
-		&.full {
-			max-width:none;
-		}
 		.#{$row} {
-			width:calc(100% + #{$gutterX});
-			box-sizing:content-box;	
-			display: flex;
-			flex-wrap: wrap;			
 
-			&.single {
-				> * {
-					margin-bottom: 0 !important;
-				}
-			}			
+			width:calc(100% + #{$gutterX});		
+			display: flex;
+			flex-wrap: wrap;
+					
 			> * {
+
 				display: flex;
 				flex-wrap: wrap;
 				margin:0 $gutterX $gutterY 0;
+
 				@if map-get($map, auto) {
 					@for $count from 1 through nth($columns, length($columns)) {
 						&:first-child:nth-last-child(#{$count}), 
@@ -66,8 +53,7 @@
 						$w:($width/$column) * $i;	
 						$percentage:percentage($w/$width);
 						&.u-#{$i}-#{$column} {
-	   						width: calc(#{$percentage} - #{$gutterX}) !important;
-	    					width: -webkit-calc(#{$percentage} - #{$gutterX}) !important;					
+	   						width: calc(#{$percentage} - #{$gutterX}) !important;					
 						}
 					}
 				}
@@ -76,13 +62,11 @@
 				}
 			}
 			@if $respondY {
-				//&.respondXY {
-					> * {
-						@media #{$respond} {
-							margin:0 $respondX $respondY 0;
-						}
+				> * {
+					@media #{$respond} {
+						margin:0 $respondX $respondY 0;
 					}
-				//}
+				}
 			}
 		}
 	}

@@ -9,7 +9,7 @@ body {
 }
 
 html, body {
-	background:black;
+	background:darken(color("blue"), 10%);
 	@media #{$respond} {
 		font-size:$mobile-size;
 	}	

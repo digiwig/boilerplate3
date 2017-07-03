@@ -14,7 +14,7 @@
 .modal-window-outer {
 	position:fixed;
 	z-index:1;
-	background:rgba(#000,0.5);
+	background:rgba(#000,0.75);
 	top:0;
 	right:0;
 	bottom:0;
@@ -35,7 +35,7 @@
 		border-radius:5px;
 		padding:$padding;
 		transition: all $speed ease-in-out;
-		transform: translateY(15%);
+		transform: translateY(15%) scale(0.75);
 
 		@media #{$respond} {
 			width:100%;
