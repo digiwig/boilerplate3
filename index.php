@@ -20,8 +20,9 @@
 
 </head>
 <body class="home">
+<input id="menu" type="checkbox">
 <header>
-	<button></button>
+	<label for="menu"></label>
 </header>
 <nav>
 <?php include("inc/nav.php");?>

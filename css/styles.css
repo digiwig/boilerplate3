@@ -1914,16 +1914,25 @@ html, body {
 }
 
 /* line 1, scss/partials/_default.scss */
+.home #menu {
+  display: none;
+}
+/* line 4, scss/partials/_default.scss */
+.home #menu:checked ~ main, .home #menu:checked ~ footer {
+  -webkit-transform: translate3d(-265px, 0, 0);
+          transform: translate3d(-265px, 0, 0);
+}
+/* line 10, scss/partials/_default.scss */
 .home header {
   height: 100px;
   background: #1c4f61;
 }
-/* line 4, scss/partials/_default.scss */
+/* line 13, scss/partials/_default.scss */
 .home header button {
   display: none;
 }
 @media (max-width: 767px) {
-  /* line 1, scss/partials/_default.scss */
+  /* line 10, scss/partials/_default.scss */
   .home header {
     height: 55px;
     background: #1c4f61;
@@ -1933,7 +1942,32 @@ html, body {
     right: 0;
     z-index: 2;
   }
-  /* line 15, scss/partials/_default.scss */
+  /* line 24, scss/partials/_default.scss */
+  .home header label {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    right: 0;
+    top: 0;
+    border: none;
+    font-size: 30px;
+    padding: 0;
+    font-family: "ui";
+    background: #328fb1;
+    display: block;
+    text-align: center;
+  }
+  /* line 38, scss/partials/_default.scss */
+  .home header label:before {
+    content: '\e804';
+    color: #fff;
+  }
+  /* line 43, scss/partials/_default.scss */
+  #menu:checked + header label:before {
+    content: '\e803';
+  }
+  /* line 48, scss/partials/_default.scss */
   .home header button {
     position: absolute;
     width: 55px;
@@ -1947,23 +1981,23 @@ html, body {
     background: #328fb1;
     display: block;
   }
-  /* line 27, scss/partials/_default.scss */
+  /* line 60, scss/partials/_default.scss */
   .home header button:before {
     content: '\e804';
     color: #fff;
   }
-  /* line 32, scss/partials/_default.scss */
+  /* line 65, scss/partials/_default.scss */
   .home header button.menu:before {
     content: '\e803';
     font-weight: bold;
   }
-  /* line 37, scss/partials/_default.scss */
+  /* line 70, scss/partials/_default.scss */
   .home header button:active {
     background: #c2e2ed;
   }
 }
 @media (max-width: 767px) {
-  /* line 45, scss/partials/_default.scss */
+  /* line 78, scss/partials/_default.scss */
   .home nav {
     right: -265px;
     -webkit-transition: opacity 0.15s ease-in-out;
@@ -1979,7 +2013,7 @@ html, body {
     -webkit-box-shadow: inset 15px 0 15px -15px #163f4d;
             box-shadow: inset 15px 0 15px -15px #163f4d;
   }
-  /* line 58, scss/partials/_default.scss */
+  /* line 91, scss/partials/_default.scss */
   .home nav ul {
     width: 265px;
     float: left;
@@ -1988,18 +2022,18 @@ html, body {
     -webkit-transform: translateZ(0);
     -webkit-overflow-scrolling: touch;
   }
-  /* line 64, scss/partials/_default.scss */
+  /* line 97, scss/partials/_default.scss */
   .home nav ul.hide {
     margin-left: -265px;
     height: 1px;
     overflow-y: hidden;
   }
-  /* line 69, scss/partials/_default.scss */
+  /* line 102, scss/partials/_default.scss */
   .home nav ul li {
     border-bottom: 1px solid #328fb1;
     font-size: 0;
   }
-  /* line 72, scss/partials/_default.scss */
+  /* line 105, scss/partials/_default.scss */
   .home nav ul li.breadcrumb {
     font-size: 1rem;
     padding: 20px;
@@ -2007,18 +2041,18 @@ html, body {
             box-sizing: content-box;
     color: #fff;
   }
-  /* line 78, scss/partials/_default.scss */
+  /* line 111, scss/partials/_default.scss */
   .home nav ul li.back {
     font-size: 1rem;
     position: relative;
     padding: 20px;
     color: #fff;
   }
-  /* line 83, scss/partials/_default.scss */
+  /* line 116, scss/partials/_default.scss */
   .home nav ul li.back:active {
     background: #215f75;
   }
-  /* line 86, scss/partials/_default.scss */
+  /* line 119, scss/partials/_default.scss */
   .home nav ul li.back:before {
     font-family: "arrows";
     content: '\e800';
@@ -2027,11 +2061,11 @@ html, body {
     width: 10px;
     margin-right: 15px;
   }
-  /* line 95, scss/partials/_default.scss */
+  /* line 128, scss/partials/_default.scss */
   .home nav ul li > ul {
     display: none;
   }
-  /* line 98, scss/partials/_default.scss */
+  /* line 131, scss/partials/_default.scss */
   .home nav ul li span {
     padding: 20px;
     width: 265px;
@@ -2039,48 +2073,48 @@ html, body {
     font-size: 1rem;
     color: #fff;
   }
-  /* line 105, scss/partials/_default.scss */
+  /* line 138, scss/partials/_default.scss */
   .home nav ul li span:active {
     background: #215f75;
   }
-  /* line 108, scss/partials/_default.scss */
+  /* line 141, scss/partials/_default.scss */
   .home nav ul li span a {
     color: #fff;
     text-decoration: none;
     display: block;
   }
-  /* line 113, scss/partials/_default.scss */
+  /* line 146, scss/partials/_default.scss */
   .home nav ul li span.parent {
     width: 210px;
     border-right: 1px solid #328fb1;
   }
-  /* line 117, scss/partials/_default.scss */
+  /* line 150, scss/partials/_default.scss */
   .home nav ul li span.next {
     width: 55px;
     font-size: 0px;
     position: relative;
     vertical-align: top;
   }
-  /* line 122, scss/partials/_default.scss */
+  /* line 155, scss/partials/_default.scss */
   .home nav ul li span.next:before {
     font-family: "arrows";
     content: '\e801';
     font-size: 1rem;
     display: inline-block;
   }
-  /* line 128, scss/partials/_default.scss */
+  /* line 161, scss/partials/_default.scss */
   .home nav ul li span.next:active {
     background: #328fb1;
   }
 }
 @media (min-width: 768px) {
-  /* line 45, scss/partials/_default.scss */
+  /* line 78, scss/partials/_default.scss */
   .home nav {
     background: #276f89;
     position: relative;
     padding: 0 15px;
   }
-  /* line 140, scss/partials/_default.scss */
+  /* line 173, scss/partials/_default.scss */
   .home nav > ul {
     max-width: 1024px;
     background: #2d7f9d;
@@ -2089,16 +2123,16 @@ html, body {
     width: auto;
     font-size: 0;
   }
-  /* line 147, scss/partials/_default.scss */
+  /* line 180, scss/partials/_default.scss */
   .home nav > ul.clone {
     display: none;
   }
-  /* line 150, scss/partials/_default.scss */
+  /* line 183, scss/partials/_default.scss */
   .home nav > ul > li {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 154, scss/partials/_default.scss */
+  /* line 187, scss/partials/_default.scss */
   .home nav > ul a {
     color: #fff;
     display: block;
@@ -2108,38 +2142,38 @@ html, body {
     text-decoration: none;
     white-space: nowrap;
   }
-  /* line 163, scss/partials/_default.scss */
+  /* line 196, scss/partials/_default.scss */
   .home nav > ul li {
     background: #5eb3d1;
     border-left: 1px solid #66b7d4;
     border-right: 1px solid #389fc5;
   }
-  /* line 167, scss/partials/_default.scss */
+  /* line 200, scss/partials/_default.scss */
   .home nav > ul li ul {
     display: none;
   }
-  /* line 170, scss/partials/_default.scss */
+  /* line 203, scss/partials/_default.scss */
   .home nav > ul li:hover {
     background: #4aa9cc;
   }
-  /* line 172, scss/partials/_default.scss */
+  /* line 205, scss/partials/_default.scss */
   .home nav > ul li:hover > ul {
     display: block;
     position: absolute;
     margin-left: -1px;
   }
-  /* line 177, scss/partials/_default.scss */
+  /* line 210, scss/partials/_default.scss */
   .home nav > ul li:hover > ul > li {
     position: relative;
     background: #4aa9cc;
   }
-  /* line 181, scss/partials/_default.scss */
+  /* line 214, scss/partials/_default.scss */
   .home nav > ul li:hover > ul > li span.parent {
     padding-right: 20px;
     display: block;
     position: relative;
   }
-  /* line 185, scss/partials/_default.scss */
+  /* line 218, scss/partials/_default.scss */
   .home nav > ul li:hover > ul > li span.parent:before {
     font-family: "arrows";
     content: '\e801';
@@ -2152,15 +2186,15 @@ html, body {
     margin-top: -5px;
     color: #86c6dd;
   }
-  /* line 199, scss/partials/_default.scss */
+  /* line 232, scss/partials/_default.scss */
   .home nav > ul li:hover > ul > li:hover {
     background: #389fc5;
   }
-  /* line 203, scss/partials/_default.scss */
+  /* line 236, scss/partials/_default.scss */
   .home nav > ul li:hover > ul > li:hover > span.parent:before {
     color: #fff;
   }
-  /* line 208, scss/partials/_default.scss */
+  /* line 241, scss/partials/_default.scss */
   .home nav > ul li:hover > ul > li:hover > ul {
     float: left;
     left: 100%;
@@ -2168,13 +2202,13 @@ html, body {
     margin-left: 1px;
   }
 }
-/* line 223, scss/partials/_default.scss */
+/* line 256, scss/partials/_default.scss */
 .home main {
   background: #276f89;
   padding: 15px;
 }
 @media (max-width: 767px) {
-  /* line 223, scss/partials/_default.scss */
+  /* line 256, scss/partials/_default.scss */
   .home main {
     margin-top: 55px;
     -webkit-transition: all 0.15s ease-in-out;
@@ -2182,29 +2216,19 @@ html, body {
     position: relative;
     z-index: 1;
   }
-  /* line 231, scss/partials/_default.scss */
-  .home main.menu {
-    -webkit-transform: translate3d(-265px, 0, 0);
-            transform: translate3d(-265px, 0, 0);
-  }
 }
-/* line 237, scss/partials/_default.scss */
+/* line 267, scss/partials/_default.scss */
 .home footer {
   height: 100px;
   background: #1c4f61;
 }
 @media (max-width: 767px) {
-  /* line 237, scss/partials/_default.scss */
+  /* line 267, scss/partials/_default.scss */
   .home footer {
     position: relative;
     z-index: 1;
     -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
-  }
-  /* line 244, scss/partials/_default.scss */
-  .home footer.menu {
-    -webkit-transform: translateX(-265px);
-            transform: translateX(-265px);
   }
 }
 /* line 7, scss/partials/pages/_home.scss */

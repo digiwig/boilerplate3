@@ -74,14 +74,6 @@ $(document).ready(function() {
 					//}	
 				});
 				$(".back").on("touchmove", function(event) {event.preventDefault();}, false);
-				menus = document.querySelectorAll("button,main,nav,footer");					   
-				button = document.querySelector("button");	
-				button.addEventListener(evt, menu, false);
-				button.addEventListener("touchmove", function(event){event.preventDefault();}, false);
-				function menu(event) {
-						event.preventDefault();
-						$(menus).toggleClass("menu");
-				}
 				
 	//END OF RESPONSIVE NAVIGATION
 	
