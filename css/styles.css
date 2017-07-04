@@ -1768,7 +1768,7 @@ p {
 /* line 14, scss/partials/components/_modal.scss */
 .modal-window-outer {
   position: fixed;
-  z-index: 1;
+  z-index: 9999;
   background: rgba(0, 0, 0, 0.75);
   top: 0;
   right: 0;
@@ -1811,8 +1811,8 @@ p {
 /* line 44, scss/partials/components/_modal.scss */
 .modal-window-outer .modal-window-inner .modal-button {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 7.5px;
+  right: 7.5px;
 }
 @media (max-width: 767px) {
   /* line 44, scss/partials/components/_modal.scss */
