@@ -1,14 +1,25 @@
 .button {
+
 	display: inline-block;
-	padding: 15px 32px;
+	padding:$padding $padding*2;
 	text-decoration: none;
 	background: white;
 	color:black;
 	cursor: pointer;
 	transition: background $speed ease-in-out;
+
 	@include hover {
 		transition:none;
 		background:rgba(white, 0.5);
+	}
+
+	&.rounded {
+		border-radius:5px;
+	}
+
+	@media #{$respond} {
+		display: block;
+		text-align: center;
 	}
 }
 

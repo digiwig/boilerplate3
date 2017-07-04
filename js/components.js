@@ -18,3 +18,16 @@ $(document).keydown(function(event) {
 function closeModal() {
 	toggleModal.prop('checked', false);	
 }
+
+/* Accordion
+------------
+
+Close any accordion on page load
+
+*/
+
+var accordion = $(".accordion input");
+accordion.prop('checked', false);
+accordion.on("change", function() {	
+	accordion.not($(this)).prop("checked", false);
+});

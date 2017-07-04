@@ -2,9 +2,7 @@
 
 	@import "partials/_default.scss";
 
-	main {
-		padding:$padding;
-	}	
+
 
 	.component-row {
 		margin:auto;
@@ -19,6 +17,13 @@
 			border-bottom:1px solid white;
 			padding-bottom: $padding;
 			margin-bottom: $margin;
+		}
+	}
+
+	.button + .button {
+		margin:0 0 0 $margin-small;
+		@media #{$respond} {
+			margin: $margin-small 0 0 0;
 		}
 	}
 
@@ -40,5 +45,5 @@
 			@media #{$tablet} #{$landscape} {&:before {content:"tablet landscape";}}
 		}
 	}
-	
+
 }

@@ -74,7 +74,7 @@ $(document).ready(function() {
 					//}	
 				});
 				$(".back").on("touchmove", function(event) {event.preventDefault();}, false);
-				menus = document.querySelectorAll("button,main,nav");					   
+				menus = document.querySelectorAll("button,main,nav,footer");					   
 				button = document.querySelector("button");	
 				button.addEventListener(evt, menu, false);
 				button.addEventListener("touchmove", function(event){event.preventDefault();}, false);

@@ -11,7 +11,7 @@ header {
 		top:0;
 		left:0;
 		right:0;
-		z-index:1;
+		z-index:2;
 		button {
 			position: absolute;
 			width: 55px;
@@ -50,7 +50,7 @@ nav {
 		width: 530px;
 		top: 55px;
 		bottom: 0;
-		z-index: -1;
+		z-index: 0;
 		overflow: auto;
 		-webkit-overflow-scrolling: touch;
 		background:#276f89;
@@ -222,20 +222,14 @@ nav {
 
 main {
 	background:#276f89;
-	padding:$margin 0 0 0;
+	padding:$padding;
 	@media #{$respond} {
-		position:absolute;
-		top:55px;
-		right:0;
-		left:0;
-		bottom:0;
-		background:darken(#276f89, 5%);
-		overflow:auto;
-		-webkit-overflow-scrolling:touch;
-		@include transition(all, $speed, ease-in-out);
+		margin-top:55px;
+		transition:all $speed ease-in-out;
+		position:relative;
+		z-index:1;
 		&.menu {
-			@include transform("translate3d(-265px,0,0)");
-			-ms-transform: translate(-265px,0); /* IE9 */
+			transform: translate3d(-265px, 0, 0);
 		}
 	}	
 }
@@ -243,4 +237,12 @@ main {
 footer {
 	height:100px;
 	background:darken(#276f89, 10%);
+	@media #{$respond} {
+		position:relative;
+		z-index:1;
+		transition:all $speed ease-in-out;
+		&.menu {
+			transform: translateX(-265px);
+		}
+	}
 }

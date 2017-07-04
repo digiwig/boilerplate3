@@ -30,7 +30,15 @@
 	
 	<div class="component-row">
 		<h1>Button, Modal</h1>
-		<label class="modal-button button" for="modal-window-1">Click Me</label>	
+		<label class="modal-button button" for="modal-window-1">Click Me</label>
+		<label class="modal-button button rounded" for="modal-window-2">Rounded</label>
+		<input type="checkbox" class="modal-toggle" id="modal-window-2">
+		<div class="modal-window-outer">
+			<div class="modal-window-inner">
+				<label class="modal-button icon-ui-cancel" for="modal-window-2"></label>
+				<h2>I am another modal window</h2>
+			</div>
+		</div>		
 		<input type="checkbox" class="modal-toggle" id="modal-window-1">
 		<div class="modal-window-outer">
 			<div class="modal-window-inner">
