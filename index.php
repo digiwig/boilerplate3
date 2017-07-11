@@ -28,6 +28,12 @@
 <?php include("inc/nav.php");?>
 </nav>
 <main>
+
+	<div class="component-row">
+		<h1>Notification Bars</h1>
+		<a class="button">Top</a>
+		<a class="button">Bottom</a>
+	</div>
 	
 	<div class="component-row">
 		<h1>Button, Modal</h1>
