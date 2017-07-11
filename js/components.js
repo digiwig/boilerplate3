@@ -1,33 +1,35 @@
-/*
+function uncheck(element) {
+	element.prop('checked', false);	
+}
 
-Modal 
-=====
+/* MODAL
+************************************************************************/
 
-Close the modal window and reset modal checkboxes on page load or on esc keypress.
-
-*/
+// Close the modal window and reset modal checkboxes on page load or on esc keypress.
 
 var toggleModal = $(".modal-toggle");
-$(document).ready(closeModal());
+$(document).ready(uncheck(toggleModal));
 $(document).keydown(function(event) {
 	if(event.keyCode == 27) {
-		closeModal();
+		uncheck(toggleModal);
 	}
 });
 
-function closeModal() {
-	toggleModal.prop('checked', false);	
-}
+/* ACCORDION
+************************************************************************/
 
-/* Accordion
-------------
-
-Close any accordion on page load
-
-*/
+// Close any accordion on page load
 
 var accordion = $(".accordion input");
-accordion.prop('checked', false);
-accordion.on("change", function() {	
-	accordion.not($(this)).prop("checked", false);
+uncheck(accordion);
+
+// Close radio type on click
+
+$(".accordion input:radio + label").on("click", function() {	
+	var input = $("input[id='"+$(this).attr('for')+"']");	
+	if (input.is(':checked')) {
+		uncheck(input);
+		return false;
+	}
 });
+

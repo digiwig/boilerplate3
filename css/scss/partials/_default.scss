@@ -1,8 +1,10 @@
 #menu {
 	display:none;
 	&:checked {
-		& ~ main, & ~ footer {
-			transform: translate3d(-265px, 0, 0);
+		@media #{$respond} {
+			& ~ main, & ~ footer {
+				transform: translate3d(-265px, 0, 0);
+			}
 		}
 	}
 }
