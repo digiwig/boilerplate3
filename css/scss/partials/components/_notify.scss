@@ -1,0 +1,49 @@
+#notify {
+	position: fixed;
+	z-index: 101;
+	display: none;
+	left: 0;
+	right: 0;
+	background: #333;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	animation-duration: 3s;
+	&.show {
+		display: block;
+	}
+	&.top {
+		top:-35px;
+		&.show {
+			animation-name: slideDown;	
+		}
+	}
+	&.bottom {
+		bottom:-35px;
+		&.show {
+			animation-name: slideUp;
+		}
+	}	
+}
+
+
+@keyframes slideUp {
+	0%, 100% {
+		transform: translateY(0px); 
+	}
+	10%, 90% {
+		transform: translateY(-35px);
+	}
+}
+
+
+@keyframes slideDown {
+	0%, 100% {
+		transform: translateY(0px); 
+	}
+	10%, 90% {
+		transform: translateY(35px);
+	}
+}
