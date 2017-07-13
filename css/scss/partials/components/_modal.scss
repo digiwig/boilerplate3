@@ -45,6 +45,7 @@
 			position: absolute;
 			top:$padding/2;
 			right:$padding/2;
+			cursor: pointer;
 			@media #{$respond} {
 				font-size:2em;
 			}

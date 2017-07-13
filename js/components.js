@@ -5,12 +5,12 @@ function uncheck(element) {
 /* NOTIFCATION BAR
 ************************************************************************/
 
-// example code to bind a notification bar to an action
+// Bind notifcation bar to trigger on click of .notify elements
+
 var notifyBar = $("#notify"),
 	notifyBtn = $(".notify");
 
 notifyBtn.on("click", function(){ 
-
 	var text = $(this).attr("data-notify");
 	var pos = $(this).attr("data-position");
 	var color = $(this).attr("data-color");
@@ -19,17 +19,24 @@ notifyBtn.on("click", function(){
 	} else {
 		notifyBar.removeAttr("style");
 	}
-
 	notifyBar.removeAttr("class");
-	notifyBar.text(text);
 	setTimeout(function(){ 
-		notifyBar.addClass(pos).addClass("show");
-	}, 10);
-	
-	
-	
-	
+		notifyBar.text(text).addClass(pos).addClass("show");
+	}, 10);	
 });
+
+// Callback function, use case eg. on form error/success
+
+function notify(text, position = "top", color = "black") {
+	if(text) {
+		$("#notify").removeAttr("class");
+		setTimeout(function(){ 
+			$("#notify").text(text).addClass(position).css("background-color", color).addClass("show")	
+		}, 10);
+	}
+}
+
+notify("Welcome to Marks Amazing Front-End Framework");
 
 
 /* MODAL
@@ -48,14 +55,16 @@ $(document).keydown(function(event) {
 /* ACCORDION
 ************************************************************************/
 
+var accordion = $(".accordion input"),
+	accordionRadio = $(".accordion input:radio + label");
+
 // Close any accordion on page load
 
-var accordion = $(".accordion input");
 uncheck(accordion);
 
 // Close radio type on click
 
-$(".accordion input:radio + label").on("click", function() {	
+accordionRadio.on("click", function() {	
 	var input = $("input[id='"+$(this).attr('for')+"']");	
 	if (input.is(':checked')) {
 		uncheck(input);

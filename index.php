@@ -20,7 +20,6 @@
 
 </head>
 <body class="home">
-<div id="notify"></div>
 <input id="menu" type="checkbox">
 <header>
 	<label for="menu"></label>
@@ -30,18 +29,18 @@
 </nav>
 <main>
 	<div class="component-row">
+		<h1>Button, Modal</h1>
+		<label class="modal-button button" for="modal-window-1">Click Me</label>
+		<label class="modal-button button rounded" for="modal-window-2">Rounded</label>
+	</div>
+	<div class="component-row">
 		<h1>Notification Bars</h1>
 		<a class="button notify" data-notify="From the top!" data-position="top">Top</a>
 		<a class="button notify" data-notify="From the bottom!" data-position="bottom">Bottom</a>
 		<a class="button notify" data-notify="Hurrah!" data-position="top" data-color="green">Green</a>
 		<a class="button notify" data-notify="Booooo!" data-position="bottom" data-color="red">Red</a>
 		<a class="button notify" data-notify="Yay!" data-position="top" data-color="#8bd0ea">Any colour you like!</a>
-	</div>
-	<div class="component-row">
-		<h1>Button, Modal</h1>
-		<label class="modal-button button" for="modal-window-1">Click Me</label>
-		<label class="modal-button button rounded" for="modal-window-2">Rounded</label>
-	</div>	
+	</div>		
 	<div class="component-row">
 		<h1>Radio Accordions</h1>
 		<div class="accordion">
@@ -89,6 +88,7 @@
 	
 </main>
 <footer></footer>
+<div id="notify"></div>
 <input type="checkbox" class="modal-toggle" id="modal-window-2">
 <div class="modal-window-outer">
 	<div class="modal-window-inner">
