@@ -1,3 +1,7 @@
+function check(element) {
+	element.prop('checked', true);	
+}
+
 function uncheck(element) {
 	element.prop('checked', false);	
 }
@@ -51,6 +55,10 @@ $(document).keydown(function(event) {
 		uncheck(toggleModal);
 	}
 });
+
+function modal(id) {
+	$(id).prop('checked', true);	
+}
 
 /* ACCORDION
 ************************************************************************/
