@@ -31,7 +31,7 @@ notifyBtn.on("click", function(){
 
 // Callback function, use case eg. on form error/success
 
-function notify(text, position = "top", color = "black") {
+function notify(text, color = "#333", position = "top") {
 	if(text) {
 		$("#notify").removeAttr("class");
 		setTimeout(function(){ 
@@ -45,6 +45,15 @@ notify("Welcome to Marks Amazing Front-End Framework");
 
 /* MODAL
 ************************************************************************/
+
+// Bind event to any element with class .modal-button, but not labels
+
+var modalButton = $(".modal-button").not("label");
+modalButton.on("click", function(){ 
+	var modal = "#"+$(this).attr("data-for");
+	check(modal);
+});
+
 
 // Close the modal window and reset modal checkboxes on page load or on esc keypress.
 

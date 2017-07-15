@@ -5,23 +5,23 @@
 	left: 0;
 	right: 0;
 	background: #333;
-	height: 35px;
-	line-height: 35px;
+	padding:10px;
 	color: #fff;
 	font-size: 1em;
+	line-height: 1.4em;
 	text-align: center;
 	animation-duration: 3s;
 	&.show {
 		display: block;
 	}
 	&.top {
-		top:-35px;
+		bottom:100%;
 		&.show {
 			animation-name: slideDown;	
 		}
 	}
 	&.bottom {
-		bottom:-35px;
+		top:100%;
 		&.show {
 			animation-name: slideUp;
 		}
@@ -34,7 +34,7 @@
 		transform: translateY(0px); 
 	}
 	10%, 90% {
-		transform: translateY(-35px);
+		transform: translateY(-100%);
 	}
 }
 
@@ -44,6 +44,14 @@
 		transform: translateY(0px); 
 	}
 	10%, 90% {
-		transform: translateY(35px);
+		transform: translateY(100%);
 	}
 }
+
+/* USAGE */
+
+/*
+
+<a class="button notify" data-notify="Text goes here" data-position="top" data-color="black">Clikc me</a>
+
+*/

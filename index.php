@@ -29,17 +29,17 @@
 </nav>
 <main>
 	<div class="component-row">
-		<h1>Button, Modal</h1>
-		<label class="modal-button button" for="modal-window-1">Click Me</label>
-		<label class="modal-button button rounded" for="modal-window-2">Rounded</label>
+		<h1>Modal</h1>
+		<label class="modal-button button" for="modal-window-1">No JS Required</label>
+		<a class="modal-button button" data-for="modal-window-2">JS Required</a>
 	</div>
 	<div class="component-row">
 		<h1>Notification Bars</h1>
-		<a class="button notify" data-notify="From the top!" data-position="top">Top</a>
-		<a class="button notify" data-notify="From the bottom!" data-position="bottom">Bottom</a>
-		<a class="button notify" data-notify="Hurrah!" data-position="top" data-color="green">Green</a>
-		<a class="button notify" data-notify="Booooo!" data-position="bottom" data-color="red">Red</a>
-		<a class="button notify" data-notify="Yay!" data-position="top" data-color="#8bd0ea">Any colour you like!</a>
+		<a class="button notify" data-notify="Hey" data-position="top">Top</a>
+		<a class="button notify" data-notify="How ya'll doing?" data-position="bottom">Bottom</a>
+		<a class="button notify" data-notify="Wait, I'm up here..." data-position="top" data-color="green">Green</a>
+		<a class="button notify" data-notify="No, I'm down here..." data-position="bottom" data-color="red">Red</a>
+		<a class="button notify" data-notify="Woah!" data-position="top" data-color="#8bd0ea">Any colour you like!</a>
 	</div>		
 	<div class="component-row">
 		<h1>Radio Accordions</h1>
