@@ -1,5 +1,5 @@
 function check(element) {
-	element.prop('checked', true);	
+	$(element).prop('checked', true);	
 }
 
 function uncheck(element) {
@@ -56,8 +56,10 @@ $(document).keydown(function(event) {
 	}
 });
 
+// Callback function, use case eg. setTimeout spam window type thing
+
 function modal(id) {
-	$(id).prop('checked', true);	
+	check(id);
 }
 
 /* ACCORDION
