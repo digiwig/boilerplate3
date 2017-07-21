@@ -9,11 +9,12 @@
 
 		overflow:hidden;
 		-webkit-transform: translateZ(0);
-		@include transition(all,0.25s,ease-in-out); 
+	
+		transition:all $speed ease-in-out;
 		#{map-get($cookie-notice, placement)}:-100%;
 		&.show {
 			#{map-get($cookie-notice, placement)}:0;
-			@include transition(all,1s,ease-in-out);
+			transition:all $speed ease-in-out;
 		}
 		> div {
 			max-width:$width + 30px; margin:auto; display:table; width:100%;
