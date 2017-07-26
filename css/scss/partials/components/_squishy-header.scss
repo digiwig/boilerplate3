@@ -1,0 +1,43 @@
+$height: 125px;
+
+@media #{$default} {
+
+	.squishy {
+		position:fixed;
+		top:0;
+		width:100%;
+		height:$height;
+		padding:$padding;
+		transition: all $speed linear;
+		z-index:2;
+		display: flex;
+		align-items: center;
+		&.squish {
+			height:74px;
+		}
+		nav {
+			width:100%;
+			max-width:$width;
+			margin:auto;
+			display: flex;
+			align-items: center;			
+			.logo {
+				margin-right:auto;
+				padding:$padding;
+				background:color("white");
+			}
+			menu {
+				a {
+					color:color("white");
+					& + a {
+						margin-left:$margin-small;
+					}
+				}
+			}
+		}
+		& + * {
+			margin-top:$height;
+		}
+	}	
+
+}

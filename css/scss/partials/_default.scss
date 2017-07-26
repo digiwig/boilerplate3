@@ -10,14 +10,14 @@
 }
 
 header {
-	height:100px;
-	background:darken(#276f89, 10%);
+	
+	background:darken(color("cyan"), 10%);
 	button {
 		display:none;
 	}
 	@media #{$respond} {
 		height:55px;
-		background:darken(#276f89, 10%);
+		background:darken(color("cyan"), 10%);
 		position:fixed;
 		top:0;
 		left:0;
@@ -34,7 +34,7 @@ header {
 			font-size:30px;
 			padding:0;
 			font-family: "ui";
-			background:lighten(#276f89, 10%);
+			background:lighten(color("cyan"), 10%);
 			display:block;
 			text-align: center;
 			&:before {
@@ -57,7 +57,7 @@ header {
 			font-size:30px;
 			padding:0;
 			font-family: "ui";
-			background:lighten(#276f89, 10%);
+			background:lighten(color("cyan"), 10%);
 			display:block;
 			&:before {
 				content: '\e804';
@@ -70,14 +70,14 @@ header {
 				}
 			}
 			&:active {
-				background:lighten(#276f89, 50%);
+				background:lighten(color("cyan"), 50%);
 			}			
 		}
 	}
 
 }
 
-nav {
+nav.default {
 	@media #{$respond} {
 		right: -265px;
 		transition:opacity $speed ease-in-out;
@@ -88,8 +88,8 @@ nav {
 		z-index: 0;
 		overflow: auto;
 		-webkit-overflow-scrolling: touch;
-		background:#276f89;
-		box-shadow:inset 15px 0 15px -15px darken(#276f89, 15%);
+		background:color("cyan");
+		box-shadow:inset 15px 0 15px -15px darken(color("cyan"), 15%);
 		ul {
 			width:265px;
 			float:left;
@@ -102,7 +102,7 @@ nav {
 				overflow-y:hidden;
 			}			
 			li {
-				border-bottom:1px solid lighten(#276f89, 10%);
+				border-bottom:1px solid lighten(color("cyan"), 10%);
 				font-size:0;
 				&.breadcrumb {
 					font-size:1rem;
@@ -116,7 +116,7 @@ nav {
 					padding:20px;
 					color:#fff;
 					&:active {
-						background:darken(#276f89, 5%);
+						background:darken(color("cyan"), 5%);
 					}					
 					&:before {
 						font-family:"arrows";
@@ -138,7 +138,7 @@ nav {
 				
 					color:#fff;
 					&:active {
-						background:darken(#276f89, 5%);
+						background:darken(color("cyan"), 5%);
 					}						
 					a {
 						color:#fff;
@@ -147,7 +147,7 @@ nav {
 					}
 					&.parent {
 						width:210px;
-						border-right:1px solid lighten(#276f89, 10%);
+						border-right:1px solid lighten(color("cyan"), 10%);
 					}
 					&.next {
 						width:55px;
@@ -161,7 +161,7 @@ nav {
 							display: inline-block;
 						}
 						&:active {
-							background:lighten(#276f89, 10%);
+							background:lighten(color("cyan"), 10%);
 						}									
 					}
 				}
@@ -169,12 +169,12 @@ nav {
 		}
 	}
 	@media #{$tabtop} {	
-		background:#276f89;
+		background:color("cyan");
 		position:relative;
 		padding:0 $margin;
 		> ul {
 			max-width:$width;
-			background:lighten(#276f89, 5%);
+			background:lighten(color("cyan"), 5%);
 			margin:auto;
 			display:block;
 			width:auto;
@@ -196,14 +196,14 @@ nav {
 				white-space:nowrap;		
 			}
 			li {
-				background:lighten(#276f89, 25%);
-				border-left:1px solid lighten(#276f89, 27%);
-				border-right:1px solid lighten(#276f89, 15%);					
+				background:lighten(color("cyan"), 25%);
+				border-left:1px solid lighten(color("cyan"), 27%);
+				border-right:1px solid lighten(color("cyan"), 15%);					
 				ul {
 					display:none;
 				}
 				&:hover {
-					background:lighten(#276f89, 20%);
+					background:lighten(color("cyan"), 20%);
 					> ul {
 						display:block;
 						position:absolute;
@@ -211,7 +211,7 @@ nav {
 						
 						> li {
 							position:relative;
-							background:lighten(#276f89, 20%);							
+							background:lighten(color("cyan"), 20%);							
 							span {
 								&.parent {
 									padding-right:20px;
@@ -227,12 +227,12 @@ nav {
 										right:10px;
 										top:50%;
 										margin-top:-5px;
-										color:lighten(#276f89, 35%);
+										color:lighten(color("cyan"), 35%);
 									}
 								}						
 							}
 							&:hover {
-								background:lighten(#276f89, 15%);
+								background:lighten(color("cyan"), 15%);
 								> span {									
 									&.parent {
 										&:before {
@@ -256,7 +256,7 @@ nav {
 }
 
 main {
-	background:#276f89;
+	background:color("cyan");
 	padding:$padding;
 	@media #{$respond} {
 		margin-top:55px;
@@ -268,7 +268,7 @@ main {
 
 footer {
 	height:100px;
-	background:darken(#276f89, 10%);
+	background:darken(color("cyan"), 10%);
 	@media #{$respond} {
 		position:relative;
 		z-index:1;

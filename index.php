@@ -21,15 +21,25 @@
 </head>
 <body class="home">
 <input id="menu" type="checkbox">
-<header>
+<header class="squishy">
+	<nav>
+		<a class="logo">Logo Goes Here</a>
+		<menu>
+			<a href="#">Home</a>
+			<a href="#">About Us</a>
+			<a href="#">Blog</a>
+			<a href="#">Contact Us</a>
+		</menu>
+	</nav>
+	
 	<label for="menu"></label>
 </header>
-<nav>
+<nav class="default">
 <?php include("inc/nav.php");?>
 </nav>
 <main>
 	<div class="component-row">
-		<h1>Modal</h1>
+		<h1>Modals</h1>
 		<label class="modal-button button" for="modal-window-1">No JS Required</label>
 		<a class="modal-button button" data-for="modal-window-2">JS Required</a>
 	</div>

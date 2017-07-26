@@ -6,6 +6,32 @@ function uncheck(element) {
 	element.prop('checked', false);	
 }
 
+/* SQUISHY HEADER
+************************************************************************/
+
+var elSelector		= 'header',
+$element		= $(elSelector),
+$window			= $(window);
+function squish() {
+	var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+	shrinkOn = 75,
+	header = document.querySelector("header");
+	if (distanceY > shrinkOn) {
+		$element.addClass("squish");
+	} else {
+		if ($element.hasClass("squish")) {
+			$element.removeClass("squish");
+		}
+	}			
+}
+$window.on('scroll', function() {
+	setTimeout(function(){ squish(); }, 0);							  
+				  
+});
+$(document).ready(function() {
+	squish();				
+});
+
 /* NOTIFCATION BAR
 ************************************************************************/
 
@@ -40,7 +66,7 @@ function notify(text, color = "#333", position = "top") {
 	}
 }
 
-notify("Welcome to Marks Amazing Front-End Framework");
+//notify("Welcome to Marks Amazing Front-End Framework");
 
 
 /* MODAL
