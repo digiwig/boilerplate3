@@ -9,25 +9,24 @@ function uncheck(element) {
 /* SQUISHY HEADER
 ************************************************************************/
 
-var elSelector		= 'header',
-$element		= $(elSelector),
-$window			= $(window);
+$squishy = $(".squishy"),
+$window	= $(window);
+
 function squish() {
 	var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-	shrinkOn = 75,
-	header = document.querySelector("header");
+	shrinkOn = 75;
 	if (distanceY > shrinkOn) {
-		$element.addClass("squish");
+		$squishy.addClass("squish");
 	} else {
-		if ($element.hasClass("squish")) {
-			$element.removeClass("squish");
+		if ($squishy.hasClass("squish")) {
+			$squishy.removeClass("squish");
 		}
 	}			
 }
 $window.on('scroll', function() {
-	setTimeout(function(){ squish(); }, 0);							  
-				  
+	squish();			  
 });
+
 $(document).ready(function() {
 	squish();				
 });
