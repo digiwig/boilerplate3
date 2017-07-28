@@ -9,27 +9,23 @@ function uncheck(element) {
 /* SQUISHY HEADER
 ************************************************************************/
 
-$squishy = $(".squishy"),
-$window	= $(window);
+var squishy = $(".squishy"),
+	shrinkon = 75;
 
 function squish() {
-	var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-	shrinkOn = 75;
-	if (distanceY > shrinkOn) {
-		$squishy.addClass("squish");
+	var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+
+	if (distanceY > shrinkon) {
+		squishy.addClass("squish");
 	} else {
-		if ($squishy.hasClass("squish")) {
-			$squishy.removeClass("squish");
+		if (squishy.hasClass("squish")) {
+			squishy.removeClass("squish");
 		}
 	}			
 }
-$window.on('scroll', function() {
-	squish();			  
-});
 
-$(document).ready(function() {
-	squish();				
-});
+$(window).on('scroll', squish);
+$(document).ready(squish);
 
 /* NOTIFCATION BAR
 ************************************************************************/

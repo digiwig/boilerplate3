@@ -30,12 +30,11 @@
 			<a href="#">Blog</a>
 			<a href="#">Contact Us</a>
 		</menu>
-	</nav>
-	
+	</nav>	
 	<label for="menu"></label>
 </header>
 <nav class="default">
-<?php include("inc/nav.php");?>
+	<?php include("inc/nav.php");?>
 </nav>
 <main>
 	<div class="component-row">
