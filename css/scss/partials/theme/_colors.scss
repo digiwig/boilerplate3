@@ -1,6 +1,6 @@
 $colors: (
 	"yellow":	#ffd000,
-	"blue":		#8bd0ea,
+	"blue":		#0683C9,
 	"cyan":		#276f89,
 	"orange":	#ed6c4c,
 	"karki":	#a4a999,	
@@ -18,4 +18,4 @@ $colors: (
 	@return lighten(black, $percent);
 }
 
-$primary:color("cyan");
+$primary:color("blue");

@@ -3,44 +3,103 @@ $height: 125px;
 @media #{$default} {
 
 	.squishy {
+		
+		width:100%;
+				
+		
 		position:fixed;
 		top:0;
-		width:100%;
-		height:$height;
-		padding:$padding;
-		transition: all $speed linear;
-		z-index:2;
-		display: flex;
-		align-items: center;
-		&.squish {
-			height:74px;
-			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
-		}
-		nav {
-			width:100%;
-			max-width:$width;
+		> div {
+			max-width: $width + $padding*2;
+			height:20vh;
+			transition: all $speed linear;
+			padding:$padding;
 			margin:auto;
 			display: flex;
 			align-items: center;			
-			.logo {
+			> a:first-child {
 				margin-right:auto;
-				padding:$padding;
-				color:color("white");
-				background:rgba(color("white"), 0.5);
-				border-radius:15px;
-			}
-			menu {
+				font-family: 'Oswald';
+				font-size:60px;
+				transition: all $speed linear;
+				text-decoration: none;
+				color:#fff;
+			}	
+			nav {
 				a {
 					color:color("white");
+					text-decoration: none;
 					& + a {
 						margin-left:$margin-small;
 					}
 				}
 			}
 		}
-		& + * {
-			margin-top:$height;
-		}
-	}	
 
+
+		&.squish {
+			
+			> div {
+				height:10vh;
+				> a:first-child {
+					font-size:20px;
+				}
+			}
+		}
+
+		& + * {
+			margin-top:20vh;
+		}		
+
+	}
 }
+
+
+
+// $height: 125px;
+
+// @media #{$default} {
+
+// 	.squishy {
+// 		position:fixed;
+// 		top:0;
+// 		width:100%;
+// 		height:$height;
+// 		padding:$padding;
+// 		transition: all $speed linear;
+// 		z-index:2;
+// 		display: flex;
+// 		align-items: center;
+// 		background:red !important;
+// 		&.squish {
+// 			height:74px;
+// 			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+// 		}
+// 		nav {
+// 			width:100%;
+// 			max-width:$width;
+// 			margin:auto;
+// 			display: flex;
+// 			align-items: center;			
+// 			.logo {
+// 				margin-right:auto;
+// 				padding:$padding;
+// 				color:color("white");
+// 				background:rgba(color("white"), 0.5);
+// 				border-radius:15px;
+// 			}
+// 			menu {
+// 				a {
+// 					color:color("white");
+// 					& + a {
+// 						margin-left:$margin-small;
+// 					}
+// 				}
+// 			}
+// 		}
+// 		& + * {
+// 			margin-top:$height;
+// 		}
+// 	}	
+
+// }

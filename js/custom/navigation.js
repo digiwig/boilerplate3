@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	// START OF RESPONSIVE NAVIGATION
 	
-				$("nav > ul > li").each(function() {
+				$("nav.awesome > ul > li").each(function() {
 					$(this).attr("id", $(this).children("span").children("a").text().replace(/ +/g, '-').toLowerCase());							 
 				});
-				$("nav ul li span").each(function() {
+				$("nav.awesome ul li span").each(function() {
 					if($(this).next().length !="0") {						  
 						$(this).addClass("parent");
 						var name = $(this).children("a").text();
@@ -26,7 +26,7 @@ $(document).ready(function() {
 					$("span.parent a").on(evt, function(event) {
 						$parent = $(this).closest(".top");
 						if($parent.attr("id")) { root = $parent.attr("id");} else { root  = root;}
-						$("nav > ul li").not("li#"+root).removeClass("active");
+						$("nav.awesome > ul li").not("li#"+root).removeClass("active");
 						if($parent.hasClass("active")) {
 							$parent.removeClass("active");
 							return true;
@@ -45,7 +45,7 @@ $(document).ready(function() {
 							return false;					
 						}			
 						$parent = $(this).text();			
-						$new  = $(this).prev("ul").clone("true").addClass("clone").appendTo('nav');		
+						$new  = $(this).prev("ul").clone("true").addClass("clone").appendTo('nav.awesome');		
 						$(this).siblings("span").closest("ul").addClass("hide");
 						$("<li class='back'>Back</li>").prependTo($new, "true");
 						var name  = $(this).attr("data-name");

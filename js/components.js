@@ -10,7 +10,7 @@ function uncheck(element) {
 ************************************************************************/
 
 var squishy = $(".squishy"),
-	shrinkon = 75;
+	shrinkon = 1;
 
 function squish() {
 	var distanceY = window.pageYOffset || document.documentElement.scrollTop;

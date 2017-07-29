@@ -13,7 +13,7 @@
 		
 	<link rel="canonical" href="{landing_page_url}"/>
 	<link rel="dns-prefetch" href="{some content heavy page?}">
-	
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
 	<link rel="author" href="{url_to_google_plus_profile}"/>
 	<link rel="stylesheet" href="/css/styles.css" type="text/css" media="all" />	
 	<link rel="stylesheet" href="/css/ie.css" type="text/css" media="all" />
@@ -22,18 +22,18 @@
 <body class="home">
 <input id="menu" type="checkbox">
 <header class="squishy">
-	<nav>
-		<a class="logo">Logo Goes Here</a>
-		<menu>
+	<div>
+		<a href="#">LOGO</a>
+		<nav>
 			<a href="#">Home</a>
 			<a href="#">About Us</a>
 			<a href="#">Blog</a>
 			<a href="#">Contact Us</a>
-		</menu>
-	</nav>	
+		</nav>
+	</div>
 	<label for="menu"></label>
 </header>
-<nav class="default">
+<nav class="awesome">
 	<?php include("inc/nav.php");?>
 </nav>
 <main>

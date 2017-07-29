@@ -10,13 +10,10 @@ module.exports = function(grunt) {
 			dist: {
 				src: [
 					'<%= pkg.assets %>js/vendor/jquery-3.1.1.min.js',
-					'<%= pkg.assets %>js/vendor/jquery.validate.min.js',
-					'<%= pkg.assets %>js/vendor/slick.min.js',
-					'<%= pkg.assets %>js/vendor/jquery.inview.min.js',
-					'<%= pkg.assets %>js/vendor/jquery.magnific-popup.min.js',
 					'<%= pkg.assets %>js/scripts.min.js',
-					'<%= pkg.assets %>js/cookies.js',
-					'<%= pkg.assets %>js/navigation.js'
+					'<%= pkg.assets %>js/custom/cookies.js',
+					'<%= pkg.assets %>js/custom/navigation.js'
+					'<%= pkg.assets %>js/components.js'
 				],
 				dest: '<%= pkg.assets %>js/<%= pkg.name %>.js'
 			}
