@@ -1,7 +1,13 @@
 section {
 	&.full {
 		padding:$padding-large;
-		background:color("white");
+		height:calc(80vh - 44px);
+		display:flex;
+		justify-content: center;
+		align-items:center;
+		@media #{$tablet} #{$portrait} {
+			height:calc(90vh - 44px);
+		}
 		@media #{$respond} {
 			padding:$padding;
 		}

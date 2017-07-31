@@ -85,7 +85,7 @@ nav.awesome {
 		width: 530px;
 		top: 55px;
 		bottom: 0;
-		z-index: 0;
+		z-index: -1;
 		overflow: auto;
 		-webkit-overflow-scrolling: touch;
 		background:$primary;
@@ -261,7 +261,7 @@ main {
 		margin-top:55px;
 		transition:all $speed ease-in-out;
 		position:relative;
-		z-index:1;
+		z-index:2;
 	}	
 }
 
@@ -270,7 +270,7 @@ footer {
 	background:darken($primary, 10%);
 	@media #{$respond} {
 		position:relative;
-		z-index:1;
+		z-index:2;
 		transition:all $speed ease-in-out;
 	}
 }

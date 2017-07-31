@@ -32,12 +32,13 @@
 		</nav>
 	</div>
 	<label for="menu"></label>
+	<nav class="awesome">
+		<?php include("inc/nav.php");?>
+	</nav>	
 </header>
-<nav class="awesome">
-	<?php include("inc/nav.php");?>
-</nav>
+
 <main>
-	<section class="full">Full Width</section>
+	<section class="full white"><div>Full Width</div></section>
 	<section class="max">
 		<div class="component-row">
 			<h1>Modals</h1>
