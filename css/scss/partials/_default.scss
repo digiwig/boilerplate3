@@ -257,9 +257,7 @@ nav.awesome {
 
 main {
 	background:$primary;
-	padding:$padding-large $padding;
 	@media #{$respond} {
-		padding:$padding;
 		margin-top:55px;
 		transition:all $speed ease-in-out;
 		position:relative;

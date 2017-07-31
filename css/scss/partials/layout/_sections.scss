@@ -1,0 +1,15 @@
+section {
+	&.full {
+		padding:$padding-large;
+		background:color("white");
+		@media #{$respond} {
+			padding:$padding;
+		}
+	}
+	&.max {
+		padding:$padding-large $padding;
+		@media #{$respond} {
+			padding:$padding;
+		}
+	}
+}

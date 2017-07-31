@@ -37,64 +37,66 @@
 	<?php include("inc/nav.php");?>
 </nav>
 <main>
-	<div class="component-row">
-		<h1>Modals</h1>
-		<label class="modal-button button" for="modal-window-1">No JS Required</label>
-		<a class="modal-button button" data-for="modal-window-2">JS Required</a>
-	</div>
-	<div class="component-row">
-		<h1>Notification Bars</h1>
-		<a class="button notify" data-notify="Hey" data-position="top">Top</a>
-		<a class="button notify" data-notify="How ya'll doing?" data-position="bottom">Bottom</a>
-		<a class="button notify" data-notify="Wait, I'm up here..." data-position="top" data-color="green">Green</a>
-		<a class="button notify" data-notify="No, I'm down here..." data-position="bottom" data-color="red">Red</a>
-		<a class="button notify" data-notify="Woah!" data-position="top" data-color="#8bd0ea">Any colour you like!</a>
-	</div>		
-	<div class="component-row">
-		<h1>Radio Accordions</h1>
-		<div class="accordion">
-			<input type="radio" name="radio" id="radio-1">
-			<label for="radio-1" class="accordion-label">Accordion Title</label>
-			<div class="accordion-content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<section class="full">Full Width</section>
+	<section class="max">
+		<div class="component-row">
+			<h1>Modals</h1>
+			<label class="modal-button button" for="modal-window-1">No JS Required</label>
+			<a class="modal-button button" data-for="modal-window-2">JS Required</a>
+		</div>
+		<div class="component-row">
+			<h1>Notification Bars</h1>
+			<a class="button notify" data-notify="Hey" data-position="top">Top</a>
+			<a class="button notify" data-notify="How ya'll doing?" data-position="bottom">Bottom</a>
+			<a class="button notify" data-notify="Wait, I'm up here..." data-position="top" data-color="green">Green</a>
+			<a class="button notify" data-notify="No, I'm down here..." data-position="bottom" data-color="red">Red</a>
+			<a class="button notify" data-notify="Woah!" data-position="top" data-color="#8bd0ea">Any colour you like!</a>
+		</div>		
+		<div class="component-row">
+			<h1>Radio Accordions</h1>
+			<div class="accordion">
+				<input type="radio" name="radio" id="radio-1">
+				<label for="radio-1" class="accordion-label">Accordion Title</label>
+				<div class="accordion-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<div class="accordion">
+				<input type="radio" name="radio" id="radio-2">
+				<label for="radio-2" class="accordion-label">Accordion Title</label>
+				<div class="accordion-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+			</div>
+			<div class="accordion">
+				<input type="radio" name="radio" id="radio-3">
+				<label for="radio-3" class="accordion-label">Accordion Title</label>
+				<div class="accordion-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+			</div>
+		</div>	
+		<div class="component-row">
+			<h1>Checkbox Accordions</h1>
+			<div class="accordion">
+				<input type="checkbox" id="checkbox-1">
+				<label for="checkbox-1" class="accordion-label">Accordion Title</label>
+				<div class="accordion-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<div class="accordion">
+				<input type="checkbox" id="checkbox-2">
+				<label for="checkbox-2" class="accordion-label">Accordion Title</label>
+				<div class="accordion-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+			</div>
+			<div class="accordion">
+				<input type="checkbox" id="checkbox-3">
+				<label for="checkbox-3" class="accordion-label">Accordion Title</label>
+				<div class="accordion-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
 			</div>
 		</div>
-		<div class="accordion">
-			<input type="radio" name="radio" id="radio-2">
-			<label for="radio-2" class="accordion-label">Accordion Title</label>
-			<div class="accordion-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+		<div class="component-row">
+			<h1>Grids</h1>
+			<?php include("inc/main.php");?>
 		</div>
-		<div class="accordion">
-			<input type="radio" name="radio" id="radio-3">
-			<label for="radio-3" class="accordion-label">Accordion Title</label>
-			<div class="accordion-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-		</div>
-	</div>	
-	<div class="component-row">
-		<h1>Checkbox Accordions</h1>
-		<div class="accordion">
-			<input type="checkbox" id="checkbox-1">
-			<label for="checkbox-1" class="accordion-label">Accordion Title</label>
-			<div class="accordion-content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-		</div>
-		<div class="accordion">
-			<input type="checkbox" id="checkbox-2">
-			<label for="checkbox-2" class="accordion-label">Accordion Title</label>
-			<div class="accordion-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-		</div>
-		<div class="accordion">
-			<input type="checkbox" id="checkbox-3">
-			<label for="checkbox-3" class="accordion-label">Accordion Title</label>
-			<div class="accordion-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-		</div>
-	</div>
-	<div class="component-row">
-		<h1>Grids</h1>
-		<?php include("inc/main.php");?>
-	</div>
-	
+	</section>
 </main>
 <footer></footer>
 <div id="notify"></div>	
