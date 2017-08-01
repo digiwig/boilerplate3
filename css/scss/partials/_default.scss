@@ -2,7 +2,7 @@
 	display:none;
 	&:checked {
 		@media #{$respond} {
-			& ~ main, & ~ footer {
+			& ~ main, & ~ footer, & ~ header nav.awesome {
 				transform: translate3d(-265px, 0, 0);
 			}
 		}
@@ -79,13 +79,13 @@ header {
 
 nav.awesome {
 	@media #{$respond} {
-		right: -265px;
-		transition:opacity $speed ease-in-out;
+		right: -530px;
+		transition:all $speed ease-in-out;
 		position: fixed;
 		width: 530px;
 		top: 55px;
 		bottom: 0;
-		z-index: -1;
+
 		overflow: auto;
 		-webkit-overflow-scrolling: touch;
 		background:$primary;
@@ -260,8 +260,8 @@ main {
 	@media #{$respond} {
 		margin-top:55px;
 		transition:all $speed ease-in-out;
-		position:relative;
-		z-index:2;
+		// position:relative;
+		// z-index:2;
 	}	
 }
 
@@ -269,8 +269,8 @@ footer {
 	height:100px;
 	background:darken($primary, 10%);
 	@media #{$respond} {
-		position:relative;
-		z-index:2;
+		// position:relative;
+		// z-index:2;
 		transition:all $speed ease-in-out;
 	}
 }

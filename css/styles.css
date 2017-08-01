@@ -1338,6 +1338,8 @@ p {
     z-index: 2;
     position: fixed;
     top: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
   }
   .squishy > div {
     max-width: 1054px;
@@ -1732,7 +1734,7 @@ section.max {
   display: none;
 }
 @media (max-width: 767px) {
-  .home #menu:checked ~ main, .home #menu:checked ~ footer {
+  .home #menu:checked ~ main, .home #menu:checked ~ footer, .home #menu:checked ~ header nav.awesome {
     -webkit-transform: translate3d(-265px, 0, 0);
             transform: translate3d(-265px, 0, 0);
   }
@@ -1802,14 +1804,13 @@ section.max {
 }
 @media (max-width: 767px) {
   .home nav.awesome {
-    right: -265px;
-    -webkit-transition: opacity 0.15s ease-in-out;
-            transition: opacity 0.15s ease-in-out;
+    right: -530px;
+    -webkit-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
     position: fixed;
     width: 530px;
     top: 55px;
     bottom: 0;
-    z-index: -1;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     background: #0683C9;
@@ -1980,8 +1981,6 @@ section.max {
     margin-top: 55px;
     -webkit-transition: all 0.15s ease-in-out;
             transition: all 0.15s ease-in-out;
-    position: relative;
-    z-index: 2;
   }
 }
 .home footer {
@@ -1990,8 +1989,6 @@ section.max {
 }
 @media (max-width: 767px) {
   .home footer {
-    position: relative;
-    z-index: 2;
     -webkit-transition: all 0.15s ease-in-out;
             transition: all 0.15s ease-in-out;
   }
