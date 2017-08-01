@@ -32,7 +32,7 @@
 		</nav>
 	</div>
 	<label for="menu"></label>
-	<nav class="awesome">
+	<nav class="infinity">
 		<?php include("inc/nav.php");?>
 	</nav>	
 </header>

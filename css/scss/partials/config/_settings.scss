@@ -48,32 +48,13 @@ $grids: (
 			tp: $tablet $portrait,
 			tl: $tablet $landscape,
 		)
-	),
-	grid0: (
-		gutterX: 0px,
-		gutterY: 0px,
-		respondX: 20px,
-		respondY: 20px,
-		column: 12,
-		row: row,
-		auto: false,
-		max-width: $width,
-		break-units: (
-			m: $respond,
-			mp: $respond $portrait,
-			ml: $respond $landscape,
-			ml-tp: #{$respond $landscape, $tablet $portrait},
-			t: $tablet,
-			tp: $tablet $portrait,
-			tl: $tablet $landscape,
-		)
-	),
+	)
 );
 
 /* LIBRARIES */
 
 $icons:(
-	social: true,
+	social: false,
 	arrows: true,
 	ui: true,
 	symbols: false
