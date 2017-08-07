@@ -21,6 +21,13 @@
 	}
 }
 
+.default {
+	display:none;
+	@media #{$default} {
+		display: block;
+	}
+}
+
 .mobile {
 	display:none;
 	@media #{$mobile} {
@@ -66,14 +73,4 @@
 
 .full, .full * {
 	max-width:none;
-}
-
-/* background colours */
-@each $name, $hex in $colors {
-	.#{$name} {
-		background-color:#{$hex};
-	}
-	.color-#{$name} {
-		color:#{$hex} !important;
-	}
 }

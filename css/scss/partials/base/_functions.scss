@@ -1,3 +1,11 @@
+@function color($color-name) {
+ 	@return map-get($colors, $color-name);
+}
+
+@function grey($percent) {
+	@return lighten(black, $percent);
+}
+
 @function set-contrast-color($color) {
 	@if (lightness($color) > 50) {
 		@return lighten($color, 10%);

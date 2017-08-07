@@ -1,12 +1,13 @@
 
 /* SMACSS Structure (sort of) */
 
-	@import "partials/theme/_colors.scss";
+	
 
 	// Config
+	
 	@import "partials/config/_media.scss";
 	@import "partials/config/_variables.scss";
-	@import "partials/config/_settings.scss";
+	@import "partials/config/_settings.scss";	
 	
 	// Base
 	@import "partials/base/_reset.scss";
@@ -15,8 +16,10 @@
 	@import "partials/base/_grid.scss";
 	@import "partials/base/_animations.scss";
 	@import "partials/base/_family.scss";
+	@import "partials/base/_helpers.scss";
 	
 	// Theme
+	@import "partials/theme/_colors.scss";
 	@import "partials/theme/_fonts.scss";	
 	@import "partials/theme/_icons.scss";
 	@import "partials/theme/_typography.scss";
@@ -24,14 +27,12 @@
 
 	// Modules
 	@import "partials/modules/_cookies.scss";
-	@import "partials/modules/_helpers.scss";
-	
 
 	// Components	
-	@import "partials/components/_notify.scss";
-	@import "partials/components/_accordion.scss";
-	@import "partials/components/_modal.scss";
-	@import "partials/components/_buttons.scss";
+	@import "partials/components/micro/_notify.scss";
+	@import "partials/components/micro/_accordion.scss";
+	@import "partials/components/micro/_modal.scss";
+	@import "partials/components/micro/_buttons.scss";
 			
 	// Layout
 	@import "partials/layout/_body.scss";
@@ -42,7 +43,7 @@
 	@import "partials/layout/_footer.scss";
 
 	// Pages
-	@import "partials/pages/_home.scss";
+	@import "partials/_default.scss";
 
 
 		

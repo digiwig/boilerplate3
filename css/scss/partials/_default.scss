@@ -1,3 +1,10 @@
+
+/***********************************
+DEFAULT STYLES TO DEMO THE FRAMEWORK
+
+Someday, sometime, someplace, merge these styles into seperate components or modules
+***********************************/
+
 #menu {
 	display:none;
 	&:checked {
@@ -10,7 +17,7 @@
 }
 
 header {	
-	background:darken($primary, 10%);
+	background:darken($primary, 10%); 
 	@media #{$respond} {
 		height:55px;
 		background:darken($primary, 10%);
@@ -46,8 +53,8 @@ header {
 	}
 }
 
-@import "../partials/components/structural/_squishy-header.scss";
-@import "../partials/components/structural/_infinity-nav.scss";
+@import "../partials/components/macro/_squishy-header.scss";
+@import "../partials/components/macro/_infinity-nav.scss";
 
 html {
 	font-size:$size;
@@ -60,13 +67,14 @@ body {
 }
 
 html, body {
-	background:$primary;
+	background:darken($primary, 20%);
 	@media #{$respond} {
 		font-size:$mobile-size;
 	}	
 }
 
 main {
+	background:$primary;
 	@media #{$respond} {
 		margin-top:55px;
 		transition:all $speed ease-in-out;
@@ -97,6 +105,10 @@ section {
 	}
 	&.max {
 		padding:$padding-large $padding;
+		> * {
+			margin:auto;
+			max-width: $width;				
+		}
 		@media #{$respond} {
 			padding:$padding;
 		}
@@ -104,8 +116,7 @@ section {
 }
 
 .component-row {
-	margin:auto;
-	max-width: $width;		
+	
 	& + .component-row {
 		margin-top:$margin;
 	}

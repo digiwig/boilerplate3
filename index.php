@@ -23,7 +23,7 @@
 <input id="menu" type="checkbox">
 <header class="squishy">
 	<div>
-		<a href="#">LOGO</a>
+		<a href="">LOGO</a>
 		<nav>
 			<a href="#">Home</a>
 			<a href="#">About Us</a>

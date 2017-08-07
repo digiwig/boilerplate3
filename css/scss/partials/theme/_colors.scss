@@ -1,5 +1,5 @@
 $colors: (
-	"yellow":	#ffd000,
+	"red":		#E61D2B,
 	"blue":		#0683C9,
 	"cyan":		#276f89,
 	"orange":	#ed6c4c,
@@ -10,12 +10,14 @@ $colors: (
 	"white":	#ffffff,
 );
 
-@function color($color-name) {
- 	@return map-get($colors, $color-name);
-}
-
-@function grey($percent) {
-	@return lighten(black, $percent);
-}
-
 $primary:color("blue");
+
+/* background colours */
+@each $name, $hex in $colors {
+	.#{$name} {
+		background-color:#{$hex};
+	}
+	.color-#{$name} {
+		color:#{$hex} !important;
+	}
+}
