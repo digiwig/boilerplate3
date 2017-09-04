@@ -99,6 +99,36 @@
 	</section>
 </main>
 <footer>
+	<div class="menu grid15">
+		<div class="row">
+			<div class="t-6-12 m-12-12">
+				<h3>Title Here</h3>
+				<nav>
+					<a href="#">A Link Somewhere</a>						
+					<a href="#">A Link Somewhere</a>
+					<a href="#">A Link Somewhere</a>
+					<a href="#">A Link Somewhere</a>
+					<a href="#">A Link Somewhere</a>
+				</nav>
+			</div>
+			<div class="t-6-12 m-12-12">
+				<h3>Title Here</h3>
+				<nav>
+					<a href="#">A Link Somewhere</a>						
+					<a href="#">A Link Somewhere</a>
+					<a href="#">A Link Somewhere</a>
+				</nav>
+			</div>
+			<div class="t-6-12 m-12-12">
+				<h3>Title Here</h3>
+				<nav></nav>
+			</div>
+			<div class="t-6-12 m-12-12">
+				<h3>Title Here</h3>
+				<nav></nav>
+			</div>
+		</div>
+	</div>
 	<div class="legal">
 		<div>
 			<p>&copy; Digiwig 2017</p>

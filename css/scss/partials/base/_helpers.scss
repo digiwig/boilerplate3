@@ -74,3 +74,14 @@
 .full, .full * {
 	max-width:none;
 }
+
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden; 
+		overflow:hidden;
+	}
+}

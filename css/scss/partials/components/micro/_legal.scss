@@ -2,6 +2,7 @@
 	background:darken($primary, 15%);
 	padding:$padding-small $padding;
 	color:color("white");
+	font-size:0.75em;
 	> div {
 		max-width: $width;
 		margin:auto;

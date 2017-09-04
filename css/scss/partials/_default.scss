@@ -136,21 +136,24 @@ section {
 	}
 }
 
-[class^="row"] {
-	> * {		
-		min-height:100px;
-		background:#fff;
-		text-align:center;
-		align-content:center;
-		justify-content: center;
-		overflow:hidden;
-		&:before {content:"?";}
-		@media #{$mobile} {&:before {content:"mobile";}}
-		@media #{$tablet} {&:before {content:"tablet";}}
-		@media #{$desktop} {&:before {content:"desktop";}}
-		@media #{$mobile} #{$portrait} {&:before {content:"mobile portrait";}}
-		@media #{$device} #{$landscape} {&:before {content:"device landscape";}}
-		@media #{$tablet} #{$portrait} {&:before {content:"tablet portrait";}}
-		@media #{$tablet} #{$landscape} {&:before {content:"tablet landscape";}}
+main {
+	[class^="row"] {
+		> * {		
+			min-height:100px;
+			background:#fff;
+			padding:$padding;
+			text-align:center;
+			align-content:center;
+			justify-content: center;
+			overflow:hidden;
+			&:before {content:"?";}
+			@media #{$mobile} {&:before {content:"mobile";}}
+			@media #{$tablet} {&:before {content:"tablet";}}
+			@media #{$desktop} {&:before {content:"desktop";}}
+			@media #{$mobile} #{$portrait} {&:before {content:"mobile portrait";}}
+			@media #{$device} #{$landscape} {&:before {content:"device landscape";}}
+			@media #{$tablet} #{$portrait} {&:before {content:"tablet portrait";}}
+			@media #{$tablet} #{$landscape} {&:before {content:"tablet landscape";}}
+		}
 	}
 }
