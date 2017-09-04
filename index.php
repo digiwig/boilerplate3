@@ -98,7 +98,14 @@
 		</div>
 	</section>
 </main>
-<footer></footer>
+<footer>
+	<div class="legal">
+		<div>
+			<p>&copy; Digiwig 2017</p>
+			<p><a href="#">Terms and Conditions</a><a href="#">Privacy Policy</a><a href="#">Cookies</a></p>
+		</div>
+	</div>
+</footer>
 <div id="notify"></div>	
 <input type="checkbox" class="modal-toggle" id="modal-window-1">
 <div class="modal-window-outer">
