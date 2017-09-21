@@ -13,7 +13,7 @@
 		
 	<link rel="canonical" href="{landing_page_url}"/>
 	<link rel="dns-prefetch" href="{some content heavy page?}">
-
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
 	<link rel="author" href="{url_to_google_plus_profile}"/>
 	<link rel="stylesheet" href="/css/styles.css" type="text/css" media="all" />	
 	<link rel="stylesheet" href="/css/ie.css" type="text/css" media="all" />

@@ -52,8 +52,16 @@ notifyBtn.on("click", function(){
 
 // Callback function, use case eg. on form error/success
 
-function notify(text, color = "#333", position = "top") {
+function notify(text, color, position) {
 	if(text) {
+
+		if(color === undefined){
+			color = "#333";
+		}
+		if(position === undefined){
+			position = "top";
+		}  
+
 		$("#notify").removeAttr("class");
 		setTimeout(function(){ 
 			$("#notify").text(text).addClass(position).css("background-color", color).addClass("show")	
