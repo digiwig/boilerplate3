@@ -112,7 +112,7 @@ uncheck(accordion);
 
 // Close radio type on click
 
-accordionRadio.on("click", function() {	
+accordionRadio.bind("click touchend", function() {	
 	var input = $("input[id='"+$(this).attr('for')+"']");	
 	if (input.is(':checked')) {
 		uncheck(input);

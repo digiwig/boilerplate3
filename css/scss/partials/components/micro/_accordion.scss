@@ -18,6 +18,9 @@
 		display: flex;
 		justify-content: space-between;
 		border-bottom:1px dotted #ccc;
+		@include hover {
+			background:#eee;
+		}		
 		&:after {
 			font-family: 'ui';
 			content:'\e80a';
@@ -29,6 +32,7 @@
 		padding:$padding;
 		border-bottom:1px dotted #ccc;
 	}
+
 }
 
 /* USAGE */
