@@ -17,18 +17,18 @@ $(document).ready(function() {
 
 
 // misc events
-$(document).keydown(function(event) {
+$(document).on("keydown", function(event) {
 	console.log("Key: "+event.key+", Code:"+event.keyCode);
 });
 
-$(window).load(function(){
+$(window).on("load", function(){
 
 });
 
-$(window).resize(function() {
-			  
+$(window).on("resize", function() {
+
 });
 
-$(window).scroll(function() {
+$(window).on("scroll", function() {
 						  
 });
