@@ -1,4 +1,4 @@
-createCookie = function (name, value, days) {
+var createCookie = function (name, value, days) {
 	if (days) {
 		var date = new Date();
 		date.setTime(date.getTime() + (days * 60 * 60 * 1000)); //so it's hours now actually -MT
@@ -8,7 +8,7 @@ createCookie = function (name, value, days) {
 	document.cookie = name + "=" + value + expires + "; path=/";
 };
 
-readCookie = function (name) {
+var readCookie = function (name) {
 	var nameEQ = name + "=";
 	var ca = document.cookie.split(';');
 	for (var i = 0; i < ca.length; i++) {
