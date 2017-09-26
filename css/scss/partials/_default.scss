@@ -44,6 +44,9 @@ header {
 				content: '\e804';
 				color:#fff;
 			}
+			@include hover {
+				background:lighten($primary, 30%);
+			}
 			@at-root #menu:checked + header label {
 				&:before {
 					content: '\e803';
@@ -90,17 +93,10 @@ footer {
 
 section {
 	&.full {
-		padding:$padding-large;
-		height:calc(80vh - 44px);
-		display:flex;
-		justify-content: center;
-		align-items:center;
-		@media #{$tablet} #{$portrait} {
-			height:calc(90vh - 44px);
-		}
-		@media #{$respond} {
-			padding:$padding;
-		}
+		height:$hero-height;
+			@media #{$respond} {
+				height:auto;	
+			}		
 	}
 	&.max {
 		padding:$padding-large $padding;
@@ -120,7 +116,7 @@ section {
 		margin-top:$margin;
 	}
 
-	h1 {
+	> h1 {
 		color:white;
 		font-size:2em;
 		border-bottom:1px solid white;
@@ -141,7 +137,7 @@ main {
 		> * {		
 			min-height:100px;
 			background:#fff;
-			padding:$padding;
+			line-height: 100px;
 			text-align:center;
 			align-content:center;
 			justify-content: center;
@@ -154,6 +150,25 @@ main {
 			@media #{$device} #{$landscape} {&:before {content:"device landscape";}}
 			@media #{$tablet} #{$portrait} {&:before {content:"tablet portrait";}}
 			@media #{$tablet} #{$landscape} {&:before {content:"tablet landscape";}}
+
+			.row {
+				background:$primary;
+				&:last-child {
+					@media #{$default} {
+						> * {
+							margin-bottom:0;
+						}	
+					}
+					@media #{$respond} {
+						> * {
+							&:last-child {
+								margin-bottom:0;
+							}
+						}	
+					}
+				}				
+			}
 		}
+
 	}
 }

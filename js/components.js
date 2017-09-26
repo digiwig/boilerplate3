@@ -120,3 +120,21 @@ accordionRadio.bind("click touchend", function() {
 	}
 });
 
+/* CAROUSEL
+************************************************************************/
+
+$(window).on("load", function(){
+
+	// Image carousel
+	$('.flexslider.images').flexslider({
+		animation: "slide",
+		selector: ".slides > img",
+	});
+
+	// Hero carousel
+	$('.flexslider.heros').flexslider({
+		animation: "slide",
+		selector: ".slides > .hero",
+		animationSpeed: 500,
+	});	
+});

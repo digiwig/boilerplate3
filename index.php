@@ -37,8 +37,51 @@
 	</nav>	
 </header>
 <main>
-	<section class="full white"><div>Full Width</div></section>
-	<section class="max">
+	<section class="full white">
+		<div class="flexslider heros">
+			<div class="slides">
+				<div class="hero">
+					<div class="inner">
+						<div class="content align-left">
+							<h1>Title Text Goes Here</h1>
+							<p>One liner paragraph text goes here.</p>
+							<a class="button rounded" href="#">Button</a>
+						</div>
+					</div>
+				</div>
+				<div class="hero">
+					<div class="inner">
+						<div class="content align-center">
+							<h1>Title Text Goes Here</h1>
+							<p>One liner paragraph text goes here.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.</p>
+							<a class="button rounded" href="#">Button</a>
+						</div>
+					</div>
+				</div>
+				<div class="hero">
+					<div class="inner">
+						<div class="content align-right">
+							<h1>Title Text Goes Here</h1>
+							<p>One liner paragraph text goes here.</p>
+							<a class="button rounded" href="#">Button</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<section class="max">		
+		<div class="component-row">
+			<h1>Carousel - Images Only</h1>
+			<div class="flexslider images">
+				<div class="slides">
+					<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg">
+					<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg">
+					<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg">
+					<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg">
+				</div>
+			</div>
+		</div>
 		<div class="component-row">
 			<h1>Modals</h1>
 			<label class="modal-button button" for="modal-window-1">No JS Required</label>
@@ -174,11 +217,14 @@
 		if('ontouchstart' in window || navigator.msMaxTouchPoints){
 			getScript("/js/vendor/fastclick.js");			
 		}	
-		getScript("/js/scripts.min.js", function() {
-			getScript("/js/custom/cookies.js");
-			getScript("/js/custom/navigation.js");
-			getScript("/js/components.js");
+		getScript("/js/vendor/plugins/jquery.flexslider-min.js", function() {
+			getScript("/js/scripts.min.js", function() {
+				getScript("/js/custom/cookies.js");
+				getScript("/js/custom/navigation.js");
+				getScript("/js/components.js");
+			});
 		});
+
 	});
 })();
 </script>

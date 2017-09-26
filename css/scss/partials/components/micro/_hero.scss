@@ -1,0 +1,88 @@
+$hero-height:calc(80vh - 44px);
+
+
+.hero {
+	color:#fff;
+	background-image:url(http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg);
+	background-position: center center;
+	background-size:cover;
+	height:100%;
+	.inner {
+		padding:$padding-extra-large;
+		background:rgba(#000, 0.5);
+		display: flex;
+		flex-direction:column;
+		text-align:center;
+		height:100%;
+		justify-content: center;
+		align-items: center;
+
+		.content {
+			width:100%;
+			max-width:$width;		
+			@media #{$default} {
+				&.align-left {
+					text-align:left;
+				}
+				&.align-right {
+					text-align:right;
+				}
+			}		
+			> * + * {
+				margin-top:$margin-medium;
+			}
+			h1 {
+				font-family: 'Oswald';
+				font-size:6em;
+				@media #{$respond} {
+					font-size:3em;	
+				}
+				font-weight:700;
+				text-transform: uppercase;
+			}		
+		}
+
+	}
+}
+
+.full {	
+	.flexslider {
+		.slides {
+			height:$hero-height;
+			@media #{$respond} {
+				height:auto;	
+			}
+			.hero {
+				.inner {
+					.content {
+						@extend .animated;
+						animation-name:fadeOut;
+					}
+				}
+
+				&.flex-active-slide {
+					.inner {
+						.content {
+				
+								animation-delay:0.5s;
+								animation-name:fadeIn;
+					
+						}
+					}
+
+				}				
+			}
+
+	
+		}	
+	}
+}
+
+.flexslider {
+	.slides {
+		.hero {
+			height:auto;
+		}
+	}
+}
+
