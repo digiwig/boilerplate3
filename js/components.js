@@ -136,5 +136,8 @@ $(window).on("load", function(){
 		animation: "slide",
 		selector: ".slides > .hero",
 		animationSpeed: 500,
+	    start: function(){
+	         $('.hero').show(); 
+	    },		
 	});	
 });
