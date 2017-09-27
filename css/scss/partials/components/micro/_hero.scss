@@ -13,7 +13,7 @@ $hero-height:calc(80vh - 44px);
 		display: flex;
 		flex-direction:column;
 		text-align:center;
-		height:100%;
+		height:$hero-height;
 		justify-content: center;
 		align-items: center;
 
@@ -65,7 +65,7 @@ $hero-height:calc(80vh - 44px);
 					.inner {
 						.content {
 							animation-delay:0.5s;
-							animation-name:fadeIn;
+							animation-name:fadeInUp;
 							@media #{$default} {
 								&.align-left {
 									animation-name: fadeInRight;
