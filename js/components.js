@@ -123,12 +123,14 @@ accordionRadio.bind("click touchend", function() {
 /* CAROUSEL
 ************************************************************************/
 
-$(window).on("load", function(){
-
+$(document).ready(function() {
 	// Image carousel
 	$('.flexslider.images').flexslider({
 		animation: "slide",
 		selector: ".slides > img",
+	    start: function(slider){
+	       slider.children(".flex-control-paging").detach().appendTo(slider.parent());;
+	    },		
 	});
 
 	// Hero carousel
@@ -136,8 +138,8 @@ $(window).on("load", function(){
 		animation: "slide",
 		selector: ".slides > .hero",
 		animationSpeed: 500,
-	    start: function(){
-	         $('.hero').show(); 
+	    start: function(slider){
+	       slider.children(".flex-control-paging").detach().appendTo(slider.parent());;
 	    },		
 	});	
 });

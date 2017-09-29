@@ -125,23 +125,17 @@
 				white-space:nowrap;	
 			}
 			li {
-				
-
 				ul {
 					display:none;
 					transition: all $speed ease-in-out;
-					border-left:1px solid lighten($primary, 5%);
 					position:absolute;	
-					background:rgba(darken($primary, 15%), 0.95);
-
+					@include gradient(rgba(darken($primary, 15%), 0.95), rgba(darken($primary, 17.5%), 0.95), "horizontal")
 				}
-				&:hover {
-					
+				&:hover {					
 					> ul {
 						display:block;						
 						> li {
-							position:relative;
-							
+							position:relative;							
 							span {
 								&.parent {
 									padding-right:20px;
@@ -174,7 +168,6 @@
 									float:left;
 									left:100%;
 									top:0px;
-						
 								}
 							}
 						}

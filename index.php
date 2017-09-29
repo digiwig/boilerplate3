@@ -37,7 +37,7 @@
 	</nav>	
 </header>
 <main>
-	<section class="full white">
+	<section class="full">
 		<div class="flexslider heros">
 			<div class="slides">
 				<div class="hero">

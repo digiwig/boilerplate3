@@ -93,10 +93,9 @@ footer {
 
 section {
 	&.full {
-		height:$hero-height;
-			@media #{$respond} {
-				height:auto;	
-			}		
+		@media #{$respond} {
+			height:auto;	
+		}		
 	}
 	&.max {
 		padding:$padding-large $padding;
