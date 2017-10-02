@@ -3,19 +3,19 @@
 $nudge: 				5px;
 $denomination:			15px;
 
-$padding: 				$denomination;			//30
-$margin: 				$denomination;			//30
+$padding: 				$denomination;			//15
+$margin: 				$denomination;			//15
 
 /* Variations */
 
-$padding-extra-small:	$denomination/2;		//15
-$padding-small:			$denomination*0.666;	//20
-$padding-medium:		$denomination*2;		//60
-$padding-large:			$denomination*3;		//90
-$padding-extra-large:	$denomination*4;		//120
+$padding-extra-small:	$denomination/2;		//7.5
+$padding-small:			$denomination*0.666;	//10
+$padding-medium:		$denomination*2;		//30
+$padding-large:			$denomination*3;		//45
+$padding-extra-large:	$denomination*4;		//60
 
-$margin-extra-small:	$denomination/3;		//10
-$margin-small:			$denomination/2;		//15
-$margin-medium:			$denomination*2;		//60
-$margin-large:			$denomination*3;		//90
-$margin-extra-large:	$denomination*4;		//120
+$margin-extra-small:	$denomination/3;		//5
+$margin-small:			$denomination/2;		//7.5
+$margin-medium:			$denomination*2;		//30
+$margin-large:			$denomination*3;		//45
+$margin-extra-large:	$denomination*4;		//60

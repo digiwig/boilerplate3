@@ -139,6 +139,7 @@ $(document).ready(function() {
 		selector: ".slides > .hero",
 		animationSpeed: 500,
 	    start: function(slider){
+	    	slider.addClass("active");
 	    	slider.children(".flex-control-paging").detach().appendTo(slider.parent());;
 	    },		
 	});	

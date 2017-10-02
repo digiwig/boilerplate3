@@ -37,13 +37,13 @@
 	</nav>	
 </header>
 <main>
-	<section>
+	<section class="white">
 		<div class="flexslider heros">
 			<div class="slides">
 				<div class="hero">
 					<div class="inner">
-						<div class="content align-left">
-							<h1>Title Text Goes Here</h1>
+						<div class="content">
+							<h1>Hero Slider</h1>
 							<p>One liner paragraph text goes here.</p>
 							<a class="button rounded" href="#">Button</a>
 						</div>
@@ -51,9 +51,9 @@
 				</div>
 				<div class="hero">
 					<div class="inner">
-						<div class="content">
-							<h1>Title Text Goes Here</h1>
-							<p>One liner paragraph text goes here.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.</p>
+						<div class="content align-left">
+							<h1>Left Aligned Contents</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
 							<a class="button rounded" href="#">Button</a>
 						</div>
 					</div>
@@ -61,7 +61,7 @@
 				<div class="hero">
 					<div class="inner">
 						<div class="content align-right">
-							<h1>Title Text Goes Here</h1>
+							<h1>Right Align It</h1>
 							<p>One liner paragraph text goes here.</p>
 							<a class="button rounded" href="#">Button</a>
 						</div>
@@ -74,7 +74,7 @@
 		<div class="hero">
 			<div class="inner">
 				<div class="content">
-					<h1>Title Text Goes Here</h1>
+					<h1>Stand Alone Hero</h1>
 					<p>One liner paragraph text goes here.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.</p>
 					<a class="button rounded" href="#">Button</a>
 				</div>
@@ -83,7 +83,7 @@
 	</section>
 	<section class="max">
 		<div class="component-row">
-			<h1>Carousel - Images Only</h1>
+			<h1>Image Slideshow</h1>
 			<div class="flexslider images">
 				<div class="slides">
 					<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg">
