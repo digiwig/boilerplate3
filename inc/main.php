@@ -1,4 +1,4 @@
-<div class="grid15">
+<div class="grid15 demo">
 	<div class="row">
 		<div class="u-3-12"></div>
 		<div class="u-3-12"></div>

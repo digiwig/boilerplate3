@@ -15,7 +15,7 @@ $primary:color("blue");
 /* background colours */
 @each $name, $hex in $colors {
 	.#{$name} {
-		background-color:#{$hex};
+		background-color:#{$hex} !important;
 	}
 	.color-#{$name} {
 		color:#{$hex} !important;
