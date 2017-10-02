@@ -1,25 +1,17 @@
-$hero-height:calc(70vh - 44px);
-
-
 .hero {
-	color:#fff;
-	background-image:url(http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg);
+	background:darken($primary, 5%) url() no-repeat center center;
 	background-position: center center;
 	background-size:cover;
-	height:100%;
 	.inner {
 		padding:$padding-extra-large;
-		background:rgba(#000, 0.5);
-		display: flex;
-		flex-direction:column;
-		text-align:center;
-		height:$hero-height;
-		justify-content: center;
-		align-items: center;
-
 		.content {
+			text-align:center;			
+			max-width:$width;
 			width:100%;
-			max-width:$width;		
+			margin:auto;
+			> * + * {
+				margin-top:$margin-medium;
+			}
 			@media #{$default} {
 				&.align-left {
 					text-align:left;
@@ -27,10 +19,10 @@ $hero-height:calc(70vh - 44px);
 				&.align-right {
 					text-align:right;
 				}
-			}		
-			> * + * {
-				margin-top:$margin-medium;
-			}
+			}	
+
+			/* default styles (overide)	*/
+			color:#fff;
 			h1 {
 				font-family: 'Oswald';
 				font-size:6em;
@@ -39,57 +31,25 @@ $hero-height:calc(70vh - 44px);
 				}
 				font-weight:700;
 				text-transform: uppercase;
-			}		
+			}				
 		}
-
 	}
 }
 
-.full {	
-	.flexslider {
-		.slides {
-			height:$hero-height;
-			@media #{$respond} {
-				height:auto;	
-			}
-			.hero {
-				display: none;
-				.inner {
-					.content {
-						@extend .animated;
-						animation-name:fadeOut;
-					}
-				}
-
-				&.flex-active-slide {
-					.inner {
-						.content {
-							animation-delay:0.5s;
-							animation-name:fadeInUp;
-							@media #{$default} {
-								&.align-left {
-									animation-name: fadeInRight;
-								}
-								&.align-right {
-									animation-name: fadeInLeft;
-								}								
-							}
-						}
-					}
-
-				}				
-			}
-
-	
-		}	
-	}
-}
-
-.flexslider {
+.heros {
 	.slides {
+		display: flex;
 		.hero {
-			height:auto;
+			display: flex !important;
+			@media #{$respond} {
+				height:calc(100vh - 129px);	// 100% minus header and slide nav
+			}
+			.inner {
+				display: flex;
+				align-items: center;
+				width:100%;
+				margin:0;				
+			}
 		}
 	}
 }
-

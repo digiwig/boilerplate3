@@ -37,7 +37,7 @@
 	</nav>	
 </header>
 <main>
-	<section class="full">
+	<section>
 		<div class="flexslider heros">
 			<div class="slides">
 				<div class="hero">
@@ -51,7 +51,7 @@
 				</div>
 				<div class="hero">
 					<div class="inner">
-						<div class="content align-center">
+						<div class="content">
 							<h1>Title Text Goes Here</h1>
 							<p>One liner paragraph text goes here.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.</p>
 							<a class="button rounded" href="#">Button</a>
@@ -70,7 +70,18 @@
 			</div>
 		</div>		
 	</section>
-	<section class="max">		
+	<section>
+		<div class="hero">
+			<div class="inner">
+				<div class="content">
+					<h1>Title Text Goes Here</h1>
+					<p>One liner paragraph text goes here.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.</p>
+					<a class="button rounded" href="#">Button</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="max">
 		<div class="component-row">
 			<h1>Carousel - Images Only</h1>
 			<div class="flexslider images">
