@@ -25,7 +25,7 @@
 		$break-units: map-get($map, break-units);
 		$max-width: map-get($map, max-width);
 		max-width:$max-width + $gutterX*2;
-		overflow:hidden;		
+		//overflow:hidden;		
 		.#{$row} {
 
 			width:calc(100% + #{$gutterX});		

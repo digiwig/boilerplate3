@@ -87,10 +87,10 @@
 			<div class="grid15">
 				<div class="row">
 					<div class="u-4-12 m-12-12 content-card">
-						<a href="#"><img src="https://media.ed.edmunds-media.com/dodge/challenger/2010/oem/2010_dodge_challenger_coupe_srt8_fq_oem_3_500.jpg" width="100%" height="auto"></a>
+						<a href="#" class="thumbnail"><img src="https://media.ed.edmunds-media.com/dodge/challenger/2010/oem/2010_dodge_challenger_coupe_srt8_fq_oem_3_500.jpg" width="100%" height="auto"></a>
 						<div class="meta">
-							<date>28th February</date>
-							<h2><a href="#">Title Goes Here</a></h2>
+							<span class="category">Category</span>
+							<h2><a href="#">Top 100 Digital Agencies 2017: The state of the industry</a></h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
 						</div>
 						<div class="user">
@@ -102,11 +102,28 @@
 						</div>
 					</div>
 					<div class="u-4-12 m-12-12 content-card">
-						<a href="#"><img src="https://media.ed.edmunds-media.com/dodge/challenger/2010/oem/2010_dodge_challenger_coupe_srt8_fq_oem_3_500.jpg" width="100%" height="auto"></a>
+						<a href="#" class="thumbnail"><img src="https://media.ed.edmunds-media.com/dodge/challenger/2010/oem/2010_dodge_challenger_coupe_srt8_fq_oem_3_500.jpg" width="100%" height="auto"></a>
 						<div class="meta">
 							<date>28th February</date>
-							<h2><a href="#">Title Goes Here</a></h2>
-							<p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+							<h2><a href="#">Trends Webinar: Measurement and Analytics Webinar - September 2017</a></h2>
+						</div>
+						<div class="read-more">
+							<a href="#" class="button rounded">Read More</a>
+						</div>						
+						<div class="stats">
+							<a class="icon-ui-heart">23</a>
+							<a class="icon-symbol-chat">2</a>
+							<a class="icon-ui-star active"></a>
+						</div>
+					</div>
+					<div class="u-4-12 m-12-12 content-card">
+						<a class="thumbnail" href="#">
+							<h2><span class="category">Category</span>A day in the life of... client manager at a shopper media agency</h2>
+							<img src="https://media.ed.edmunds-media.com/dodge/challenger/2010/oem/2010_dodge_challenger_coupe_srt8_fq_oem_3_500.jpg" width="100%" height="auto">
+						</a>
+						<div class="meta">
+							<date>28th February</date>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
 						</div>
 						<div class="user">
 							<a href="#" class="avatar"><img src="http://www.translationwebshop.com/wp-content/themes/translationwebshop/images/img_placeholder_avatar.jpg"></a>
@@ -114,15 +131,7 @@
 								<span>Mark Wigglesworth</span>
 								<span>Senior Web Developer</span>
 							</div>
-						</div>
-					</div>
-					<div class="u-4-12 m-12-12 content-card">
-						<a href="#"><img src="https://media.ed.edmunds-media.com/dodge/challenger/2010/oem/2010_dodge_challenger_coupe_srt8_fq_oem_3_500.jpg" width="100%" height="auto"></a>
-						<div class="meta">
-							<date>28th February</date>
-							<h2><a href="#">Title Goes Here</a></h2>
-							<p>Ssed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-						</div>
+						</div>						
 						<div class="read-more">
 							<a href="#" class="button rounded">Read More</a>
 						</div>
