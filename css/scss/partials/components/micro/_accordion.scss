@@ -5,7 +5,7 @@
 		&:checked {
 			& + .accordion-label {
 				&:after {
-					content: "\e80b";
+					content: "\e80D";
 				}
 			}
 			& ~ .accordion-content {
@@ -23,7 +23,7 @@
 		}		
 		&:after {
 			font-family: 'ui';
-			content:'\e80a';
+			content:'\e80C';
 			display: block;
 		}
 	}

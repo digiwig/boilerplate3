@@ -33,6 +33,7 @@
 			h1 {
 				font-family: 'Oswald';
 				font-size:4em;
+				margin-bottom:-0.25em;
 				@media #{$respond} {
 					font-size:3em;	
 				}

@@ -41,7 +41,7 @@ header {
 			display:block;
 			text-align: center;
 			&:before {
-				content: '\e804';
+				content: '\e806';
 				color:#fff;
 			}
 			@include hover {
@@ -49,7 +49,7 @@ header {
 			}
 			@at-root #menu:checked + header label {
 				&:before {
-					content: '\e803';
+					content: '\e805';
 				}
 			}						
 		}

@@ -100,7 +100,8 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
-  width: 40px;
+  width: 25px;
+  
   height: 40px;
   margin: -20px 0 0;
   position: absolute;
@@ -118,6 +119,7 @@ html[xmlns] .flexslider .slides {
   display: inline-block;
   content: '\f001';
   color: rgba(0, 0, 0, 0.8);
+  line-height: 40px;
 }
 .flex-direction-nav a.flex-next:before {
   content: '\f002';
