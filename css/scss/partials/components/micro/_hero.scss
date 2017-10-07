@@ -9,9 +9,7 @@
 			max-width:$width;
 			width:100%;
 			margin:auto;
-			> * + * {
-				margin-top:$margin-medium;
-			}
+
 			@media #{$default} {
 				&.align-left {
 					text-align:left;
@@ -28,12 +26,16 @@
 				}
 			}	
 
-			/* default styles (overide)	*/
+			/* default styles (change here to suit whatev)	*/
+			> * + * {
+				margin-top:$margin-medium;
+			}			
 			color:#fff;
 			h1 {
 				font-family: 'Oswald';
 				font-size:4em;
-				margin-bottom:-0.25em;
+				margin-bottom:-0.15em;
+				line-height: 1em;
 				@media #{$respond} {
 					font-size:3em;	
 				}
@@ -54,6 +56,7 @@
 		display: flex;
 		.hero {
 			display: flex !important;
+			min-height:calc(80vh - 123px);
 			@media #{$respond} {
 				height:calc(100vh - 129px);	// 100% minus header and slide nav
 			}

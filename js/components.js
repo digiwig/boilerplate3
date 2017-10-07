@@ -144,3 +144,13 @@ $(document).ready(function() {
 	    },		
 	});	
 });
+
+/* GOOGLE MAP
+************************************************************************/
+
+if(exist("#map")) {
+	$.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyCWg6EsSlK-EmCdimmWNodJr4adyFK_uAM", function() {
+		$.getScript( "js/custom/map.js");
+	});
+	
+}
