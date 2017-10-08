@@ -4,6 +4,19 @@ var latitude = canvas.data("latitude");
 var desktopzoom = canvas.data("desktop-zoom");
 var tabletzoom = canvas.data("tablet-zoom");
 var mobilezoom = canvas.data("mobile-zoom");
+var info = canvas.data("info");
+
+
+
+var markers = [];
+
+var main_locations = [
+    ['Information Window', longitude, latitude]
+];
+
+var main_locations_infoWindowContent = [
+    [info]
+];
 
 var map = new google.maps.Map(document.getElementById('map'), {
     center: new google.maps.LatLng(longitude, latitude),
@@ -182,6 +195,33 @@ map.setOptions({
     panControl:false,
     disableDefaultUI: true,
 });
+
+var infowindow = new google.maps.InfoWindow();
+
+var marker, i;
+
+
+
+for (i = 0; i < main_locations.length; i++) {  
+
+    // Create markers
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(main_locations[i][1], main_locations[i][2]),
+        icon: "images/icons/pin.png",
+        map: map,
+    });
+
+    // Add info window content and click event
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+            infowindow.setContent(main_locations_infoWindowContent[i][0]);
+            infowindow.open(map, marker);
+        }
+    })(marker, i));
+
+    markers.push(marker);
+
+}
 
 function mapZoom() {
     if($(window).innerWidth() < 768) { 

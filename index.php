@@ -82,9 +82,6 @@
 			</div>
 		</div>
 	</section>
-	<section>
-		<div class="map" id="map" data-api-key="AIzaSyCWg6EsSlK-EmCdimmWNodJr4adyFK_uAM" data-longitude="51.5078521" data-latitude="-0.1439478" data-desktop-zoom="12" data-tablet-zoom="14" data-mobile-zoom="16"></div>
-	</section>
 	<section class="max">
 		<div class="component-row">
 			<h1>Content Cards</h1>
@@ -217,6 +214,9 @@
 			<?php include("inc/main.php");?>
 		</div>
 	</section>
+	<section>
+		<div class="map" id="map" data-api-key="AIzaSyCWg6EsSlK-EmCdimmWNodJr4adyFK_uAM" data-longitude="51.5078521" data-latitude="-0.1439478" data-desktop-zoom="12" data-tablet-zoom="14" data-mobile-zoom="16" data-info="<p><strong>Dublin, Ireland</strong></p><p>South County Business Park<br/>Leopardstown<br/>Dublin<br/>D18 T9P8</p>"></div>
+	</section>	
 </main>
 <footer>
 	<div class="menu grid15">
