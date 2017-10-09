@@ -5,6 +5,7 @@ var desktopzoom = canvas.data("desktop-zoom");
 var tabletzoom = canvas.data("tablet-zoom");
 var mobilezoom = canvas.data("mobile-zoom");
 var info = canvas.data("info");
+var pin = canvas.data("pin");
 
 
 
@@ -207,8 +208,9 @@ for (i = 0; i < main_locations.length; i++) {
     // Create markers
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(main_locations[i][1], main_locations[i][2]),
-        icon: "images/icons/pin.png",
+        icon: pin,
         map: map,
+        animation: google.maps.Animation.BOUNCE,
     });
 
     // Add info window content and click event

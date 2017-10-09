@@ -215,7 +215,15 @@
 		</div>
 	</section>
 	<section>
-		<div class="map" id="map" data-api-key="AIzaSyCWg6EsSlK-EmCdimmWNodJr4adyFK_uAM" data-longitude="51.5078521" data-latitude="-0.1439478" data-desktop-zoom="12" data-tablet-zoom="14" data-mobile-zoom="16" data-info="<p><strong>Dublin, Ireland</strong></p><p>South County Business Park<br/>Leopardstown<br/>Dublin<br/>D18 T9P8</p>"></div>
+		<div class="map" id="map" 
+		data-api-key="AIzaSyCWg6EsSlK-EmCdimmWNodJr4adyFK_uAM" 
+		data-longitude="51.5078521" 
+		data-latitude="-0.1439478" 
+		data-desktop-zoom="12" 
+		data-tablet-zoom="14" 
+		data-mobile-zoom="16" 
+		data-info="<p><strong>Dublin, Ireland</strong></p><p>South County Business Park<br/>Leopardstown<br/>Dublin<br/>D18 T9P8</p>" 
+		data-pin="/images/icons/pin.png"></div>
 	</section>	
 </main>
 <footer>
