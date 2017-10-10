@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 					'<%= pkg.assets %>js/vendor/jquery-3.1.1.min.js',
 					'<%= pkg.assets %>js/scripts.min.js',
 					'<%= pkg.assets %>js/custom/cookies.js',
-					'<%= pkg.assets %>js/custom/navigation.js'
+					'<%= pkg.assets %>js/custom/navigation.js',
 					'<%= pkg.assets %>js/components.js'
 				],
 				dest: '<%= pkg.assets %>js/<%= pkg.name %>.js'
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
 		postcss: {
 			options: {
 				processors: [
-					require('autoprefixer')({browsers: 'last 4 versions'}), 
+					require('autoprefixer')({browsers: '>1%, last 8 versions'}), 
 					require('cssnano')()
 				]
 			},
