@@ -53,3 +53,54 @@ $(window).on("resize", function() {
 $(window).on("scroll", function() {
 						  
 });
+
+
+
+
+
+
+
+
+
+
+
+
+// Namespace.
+// var BP3 = BP3 || {};
+
+// BP3.supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+// BP3.hash = window.location.hash;
+
+
+// ( function( $ ) {
+
+// 	//'use strict';
+
+// 	/////////////////// VARS ////////////////////////
+// 	var hash = $('body').find('a[href^="#"]');
+
+// 	/////////////////// GLOBALS ////////////////////////
+// 	BP3.exist = function(element) {
+// 		if ($(element).length > 0) {
+// 			return true;
+// 		}
+// 	};
+
+// 	BP3.doFastClick = function() {
+// 		if (BP3.supportsTouch != "undefined") {
+// 			$(function() {
+// 				FastClick.attach(document.body);
+// 			});
+// 		}
+// 	};
+
+// 	/////////////////// INIT ////////////////////////////
+// 	BP3.init = function() {
+// 		BP3.doFastClick();
+// 	};	
+
+// } )( jQuery );
+
+// $(document).ready(function() {
+// 	BP3.init();
+// });	
