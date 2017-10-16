@@ -26,6 +26,9 @@ var BP3 = BP3 || {};
 
 	// COMPONENTS
 
+	/* SQUISHY HEADER
+	************************************************************************/
+
 	BP3.squishy = function() {
 
 		var header = $(".squishy"),
@@ -42,7 +45,12 @@ var BP3 = BP3 || {};
 
 	}
 
-	BP3.notify = function() {	
+	/* NOTIFCATION BAR
+	************************************************************************/		
+
+	BP3.notify = function() {
+
+		// Bind notifcation bar to trigger on click of .notify elements	
 
 		var notifyBar = $("#notify"),
 			notifyBtn = $(".notify");
@@ -62,19 +70,16 @@ var BP3 = BP3 || {};
 			}, 10);	
 		});	
 
-
-		// use (new BP3.notify()).callback("Groopidy Skooble Doobly Rooble");
+		// Callback function, use case eg. on form error/success, use '(new BP3.notify()).callback("Groopidy Skooble Doobly Rooble");'
 
 		this.callback = function(text, color, position) {
 			if(text) {
-
 				if(color === undefined){
 					color = "#333";
 				}
 				if(position === undefined){
 					position = "top";
 				}  
-
 				$("#notify").removeAttr("class");
 				setTimeout(function(){ 
 					$("#notify").text(text).addClass(position).css("background-color", color).addClass("show")	
@@ -83,6 +88,10 @@ var BP3 = BP3 || {};
 		}
 	}
 
+	/* CAROUSEL (http://flexslider.woothemes.com/)
+	************************************************************************/
+
+	// Images
 	BP3.imageSlider = function() {
 		$('.flexslider.images').flexslider({
 			animation: "slide",
@@ -93,6 +102,7 @@ var BP3 = BP3 || {};
 		});		
 	}
 
+	// Hero/Content
 	BP3.heroSlider = function() {
 		$('.flexslider.heros').flexslider({
 			animation: "slide",
@@ -106,6 +116,9 @@ var BP3 = BP3 || {};
 	}
 
 
+	/* MODAL WINDOW (for bespoke content)
+	************************************************************************/
+
 	BP3.modals = function() {
 
 		// Bind event to any element with class .modal-button, but not labels
@@ -116,7 +129,6 @@ var BP3 = BP3 || {};
 			BP3.check(modal);
 		});
 
-
 		// Close the modal window and reset modal checkboxes on page load or on esc keypress.
 
 		var toggleModal = $(".modal-toggle");
@@ -126,11 +138,55 @@ var BP3 = BP3 || {};
 				BP3.uncheck(toggleModal);
 			}
 		});
+
+		// Callback function, use case eg. setTimeout spam window type thing, use '(new BP3.modals()).modal("#modal-window-1");'
+
+		this.modal = function(id) {
+			$(document).ready(function() {
+				BP3.check(id);	
+			});
+		}
+
+	}
+
+	/* ACCORDIONS
+	************************************************************************/
+
+	BP3.accordions = function() {
+
+		var accordion = $(".accordion input"),
+		accordionRadio = $(".accordion input:radio + label");
+
+		// Close any accordion on page load
+
+		BP3.uncheck(accordion);		
+
+		// Close radio type on click
+
+		accordionRadio.bind("click touchend", function() {	
+			var input = $("input[id='"+$(this).attr('for')+"']");	
+			if (input.is(':checked')) {
+				BP3.uncheck(input);
+				return false;
+			}
+		});		
+
+	}
+
+	/* GOOGLE MAP
+	************************************************************************/
+
+	BP3.googleMap = function() {
+		$.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyCWg6EsSlK-EmCdimmWNodJr4adyFK_uAM", function() {
+			$.getScript( "js/custom/map.js");
+		});
 	}
 
 
 
-	// INIT
+	/* INITIALISATION
+	************************************************************************/
+
 	BP3.init = function() {
 
 		if (BP3.exist(".squishy")) {
@@ -141,7 +197,6 @@ var BP3 = BP3 || {};
 		if(BP3.exist("#notify")) {
 			BP3.notify();
 		}
-
 
 		if(BP3.exist(".flexslider.heros")) {
 			BP3.heroSlider();
@@ -155,181 +210,18 @@ var BP3 = BP3 || {};
 			BP3.modals();
 		}
 
+		if(BP3.exist(".accordion")) {
+			BP3.accordions();
+		}	
+
+		if(BP3.exist("#map")) {
+			BP3.googleMap();
+		}
+
 	};		
 
 } )( jQuery );
 
 $(document).ready(function() {
 	BP3.init();
-});	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function check(element) {
-	$(element).prop('checked', true);	
-}
-
-function uncheck(element) {
-	element.prop('checked', false);	
-}
-
-/* SQUISHY HEADER
-************************************************************************/
-
-// var squishy = $(".squishy"),
-// 	shrinkon = 1;
-
-// function squish() {
-// 	var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-
-// 	if (distanceY > shrinkon) {
-// 		squishy.addClass("squish");
-// 	} else {
-// 		if (squishy.hasClass("squish")) {
-// 			squishy.removeClass("squish");
-// 		}
-// 	}			
-// }
-
-// $(window).on('scroll', squish);
-// $(document).ready(squish);
-
-/* NOTIFCATION BAR
-************************************************************************/
-
-// Bind notifcation bar to trigger on click of .notify elements
-
-// var notifyBar = $("#notify"),
-// 	notifyBtn = $(".notify");
-
-// notifyBtn.on("click", function(){ 
-// 	var text = $(this).attr("data-notify");
-// 	var pos = $(this).attr("data-position");
-// 	var color = $(this).attr("data-color");
-// 	if(color) {
-// 		notifyBar.css("background-color", color);
-// 	} else {
-// 		notifyBar.removeAttr("style");
-// 	}
-// 	notifyBar.removeAttr("class");
-// 	setTimeout(function(){ 
-// 		notifyBar.text(text).addClass(pos).addClass("show");
-// 	}, 10);	
-// });
-
-// Callback function, use case eg. on form error/success
-
-//notify("Welcome to Marks Amazing Front-End Framework");
-
-
-
-
-/* MODAL
-************************************************************************/
-
-// // Bind event to any element with class .modal-button, but not labels
-
-// var modalButton = $(".modal-button").not("label");
-// modalButton.on("click", function(){ 
-// 	var modal = "#"+$(this).attr("data-for");
-// 	check(modal);
-// });
-
-
-// // Close the modal window and reset modal checkboxes on page load or on esc keypress.
-
-// var toggleModal = $(".modal-toggle");
-// $(document).ready(uncheck(toggleModal));
-// $(document).keydown(function(event) {
-// 	if(event.keyCode == 27) {
-// 		uncheck(toggleModal);
-// 	}
-// });
-
-// Callback function, use case eg. setTimeout spam window type thing
-
-function modal(id) {
-	check(id);
-}
-
-/* ACCORDION
-************************************************************************/
-
-var accordion = $(".accordion input"),
-	accordionRadio = $(".accordion input:radio + label");
-
-// Close any accordion on page load
-
-uncheck(accordion);
-
-// Close radio type on click
-
-accordionRadio.bind("click touchend", function() {	
-	var input = $("input[id='"+$(this).attr('for')+"']");	
-	if (input.is(':checked')) {
-		uncheck(input);
-		return false;
-	}
 });
-
-/* CAROUSEL
-************************************************************************/
-
-
-
-/* GOOGLE MAP
-************************************************************************/
-
-if(exist("#map")) {
-	$.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyCWg6EsSlK-EmCdimmWNodJr4adyFK_uAM", function() {
-		$.getScript( "js/custom/map.js");
-	});
-	
-}
