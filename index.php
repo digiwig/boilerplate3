@@ -314,7 +314,6 @@
 		}	
 		getScript("/js/vendor/plugins/jquery.flexslider-min.js", function() {
 			getScript("/js/scripts.min.js", function() {
-				getScript("/js/custom/cookies.js");
 				getScript("/js/custom/navigation.js");
 				getScript("/js/components.js");
 			});

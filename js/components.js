@@ -26,6 +26,22 @@ var BP3 = BP3 || {};
 
 	// COMPONENTS
 
+	/* COOKIE NOTICE 
+	************************************************************************/
+
+	BP3.cookieNotice = function() {
+
+		var cookies = $(".cookies");
+
+		if (readCookie('cookies') == null) {
+			cookies.addClass("show");
+			createCookie('cookies', '1');
+		}
+		cookies.on("click", function() {
+			cookies.removeClass("show");	
+		});		
+	}	
+
 	/* SQUISHY HEADER
 	************************************************************************/
 
@@ -188,6 +204,10 @@ var BP3 = BP3 || {};
 	************************************************************************/
 
 	BP3.init = function() {
+
+		if(BP3.exist(".cookies")) {
+			BP3.cookieNotice();
+		}
 
 		if (BP3.exist(".squishy")) {
 			BP3.squishy();
