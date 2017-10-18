@@ -16,6 +16,9 @@
 	&.rounded {
 		border-radius:5px;
 	}
+	&.small {
+		padding:$padding/2 $padding;
+	}
 
 	@media #{$respond} {
 		display: block;
