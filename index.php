@@ -285,7 +285,10 @@
 </div>
 <div class="cookies">
 	<div class="cookies-inner">
-		<p>This website uses cookies to improve user experience. By using our website you consent to our use of cookies. <br>Find out how to delete, block and manage cookies <a href="https://ico.org.uk/for-the-public/online/cookies/" target="_blank">here</a>.</p>
+		<div>
+			<p>This website uses cookies to improve user experience. By using our website you consent to our use of cookies.</p>
+			<p><a href="https://ico.org.uk/for-the-public/online/cookies/" target="_blank">Find out how to delete, block and manage cookies here</a>.</p>
+		</div>
 		<a class="button small">I got it!</a>
 	</div>
 </div>
