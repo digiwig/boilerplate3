@@ -286,8 +286,9 @@
 <div class="cookies">
 	<div class="cookies-inner">
 		<div>
-			<p>This website uses cookies to improve user experience. By using our website you consent to our use of cookies.</p>
-			<p><a href="https://ico.org.uk/for-the-public/online/cookies/" target="_blank">Find out how to delete, block and manage cookies here</a>.</p>
+			<p>This website uses cookies. By continuing to browse the site you are agreeing to our use of cookies. For more details about cookies and how to manage them, <a href="https://ico.org.uk/for-the-public/online/cookies/" target="_blank">see here</a>.</p>
+<!-- 			<p>This website uses cookies to improve user experience. By using our website you consent to our use of cookies.</p>
+			<p><a href="https://ico.org.uk/for-the-public/online/cookies/" target="_blank">Find out how to delete, block and manage cookies here</a>.</p> -->
 		</div>
 		<a class="button small">I got it!</a>
 	</div>
