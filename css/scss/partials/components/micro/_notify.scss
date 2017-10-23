@@ -1,7 +1,7 @@
 #notify {
 	position: fixed;
 	z-index: 101;
-	display: none;
+
 	left: 0;
 	right: 0;
 	background: #333;
@@ -11,42 +11,61 @@
 	line-height: 1.4em;
 	text-align: center;
 	animation-duration: 3s;
-	&.show {
-		display: block;
-	}
+
 	&.top {
-		bottom:100%;
+		top:0;
+		transform: translateY(-100%); 
 		&.show {
 			animation-name: slideDown;	
-		}
+		}	
 	}
 	&.bottom {
-		top:100%;
+		bottom:0;
+		transform: translateY(100%); 
 		&.show {
-			animation-name: slideUp;
+			animation-name: slideUp;	
 		}
 	}	
 }
 
-
 @keyframes slideUp {
 	0%, 100% {
-		transform: translateY(0px); 
+		transform: translateY(100%); 
 	}
 	10%, 90% {
-		transform: translateY(-100%);
+		transform: translateY(0);
 	}
 }
-
 
 @keyframes slideDown {
 	0%, 100% {
-		transform: translateY(0px); 
+		transform: translateY(-100%); 
 	}
 	10%, 90% {
-		transform: translateY(100%);
+		transform: translateY(0);
 	}
 }
+
+
+
+// @keyframes slideUp {
+// 	0%, 100% {
+// 		transform: translateY(0px); 
+// 	}
+// 	10%, 90% {
+// 		transform: translateY(-100%);
+// 	}
+// }
+
+
+// @keyframes slideDown {
+// 	0%, 100% {
+// 		transform: translateY(0px); 
+// 	}
+// 	10%, 90% {
+// 		transform: translateY(100%);
+// 	}
+// }
 
 /* USAGE */
 

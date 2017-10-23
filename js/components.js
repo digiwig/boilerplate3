@@ -37,7 +37,7 @@ var BP3 = BP3 || {};
 			cookies.addClass("show");
 			createCookie('cookies', '1');
 		}
-		cookies.on("click", function() {
+		cookies.find(".button").on("click", function() {
 			cookies.removeClass("show");	
 		});		
 	}	

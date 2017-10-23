@@ -85,6 +85,7 @@
 	<section class="max">
 		<div class="component-row">
 			<h1>Content Cards</h1>
+			<p>Modular layers can be used in any order.</p>
 			<div class="grid15">
 				<div class="row">
 					<div class="u-4-12 m-12-12 content-card">
@@ -162,7 +163,15 @@
 			<a class="modal-button button" data-for="modal-window-2">JS Required</a>
 		</div>
 		<div class="component-row">
+			<h1>Cookie Notice</h1>
+			<p>Default styled as a box. Add class 'top' or 'bottom' for notice bar styles.</p>
+			<a class="button" onclick="document.getElementById('cookies').className = 'cookies show';">Default</a>
+			<a class="button" onclick="document.getElementById('cookies').className = 'cookies show top';">Top Bar</a>
+			<a class="button" onclick="document.getElementById('cookies').className = 'cookies show bottom';">Bottom Bar</a>
+		</div>			
+		<div class="component-row">
 			<h1>Notification Bars</h1>
+			<p>Use the following: data-notify (text), data-position (top or bottom), data-color (hex, or named color).</p>
 			<a class="button notify" data-notify="Hey" data-position="top">Top</a>
 			<a class="button notify" data-notify="How ya'll doing?" data-position="bottom">Bottom</a>
 			<a class="button notify" data-notify="Wait, I'm up here..." data-position="top" data-color="green">Green</a>
@@ -283,7 +292,7 @@
 		</div>
 	</div>
 </div>
-<div class="cookies">
+<div class="cookies" id="cookies">
 	<div class="cookies-inner">
 		<div>
 			<p>This website uses cookies. By continuing to browse the site you are agreeing to our use of cookies. For more details about cookies and how to manage them, <a href="https://ico.org.uk/for-the-public/online/cookies/" target="_blank">see here</a>.</p>

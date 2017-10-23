@@ -115,6 +115,10 @@ section {
 		border-bottom:1px solid white;
 		padding-bottom: $padding;
 		margin-bottom: $margin;
+		+ p {
+			margin-bottom:$margin;
+			color:color("white");
+		}
 	}
 }
 

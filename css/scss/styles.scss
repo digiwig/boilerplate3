@@ -46,6 +46,8 @@
 	@import "partials/components/micro/_pagination.scss";
 	@import "partials/components/micro/_breadcrumbs.scss";
 	@import "partials/components/micro/_content-class-for-textual-wysiwyg-content.scss";
+	@import "partials/components/micro/_image-poster";
+	@import "partials/components/micro/_video-poster";
 	*/
 	
 
@@ -63,6 +65,3 @@
 
 	// Pages
 	@import "partials/_default.scss";
-
-
-		
