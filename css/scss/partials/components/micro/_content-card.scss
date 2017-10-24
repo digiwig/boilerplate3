@@ -7,6 +7,7 @@
 
 	figure {
 		position: relative;
+		min-height:1%; // IE Sucks
 		figcaption {
 			position: absolute;
 			top:0;
