@@ -15,7 +15,7 @@ var BP3 = BP3 || {};
 		}
 	};	
 
-	BP3.check = function(element) {
+	BP3.check = function(element) { 
 		$(element).prop('checked', true);	
 	}
 
@@ -59,6 +59,22 @@ var BP3 = BP3 || {};
 			}
 		}
 
+	}
+
+	/* AUTO HIDE HEADER
+	************************************************************************/
+
+	BP3.autoHideHeader = function() {
+		var lastScrollTop = 0;
+		$(window).on("scroll", $.debounce( 250,false, function(e) {
+			var st = $(this).scrollTop();
+			if (st > lastScrollTop){
+				$(".autohide").addClass("hidden");
+			} else {
+				$(".autohide").removeClass("hidden");
+			}
+			lastScrollTop = st;
+		}));
 	}
 
 	/* NOTIFCATION BAR
@@ -112,6 +128,7 @@ var BP3 = BP3 || {};
 		$('.flexslider.images').flexslider({
 			animation: "slide",
 			selector: ".slides > img",
+			slideshow: false,
 		    start: function(slider){
 		       slider.children(".flex-control-paging").detach().appendTo(slider.parent());;
 		    },		
@@ -123,6 +140,7 @@ var BP3 = BP3 || {};
 		$('.flexslider.heros').flexslider({
 			animation: "slide",
 			selector: ".slides > .hero",
+			slideshow: false,
 			animationSpeed: 500,
 		    start: function(slider){
 		    	slider.addClass("active");
@@ -213,6 +231,10 @@ var BP3 = BP3 || {};
 			BP3.squishy();
 			$(window).on("scroll", BP3.squishy);			
 		}
+
+		if (BP3.exist(".autohide")) {
+			BP3.autoHideHeader();
+		}		
 
 		if(BP3.exist("#notify")) {
 			BP3.notify();

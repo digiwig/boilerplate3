@@ -10,8 +10,11 @@ module.exports = function(grunt) {
 			dist: {
 				src: [
 					'<%= pkg.assets %>js/vendor/jquery-3.1.1.min.js',
+					'<%= pkg.assets %>js/vendor/plugins/jquery.throttle-debounce.js',
+					'<%= pkg.assets %>js/vendor/plugins/jquery.inview.min.js',
+					'<%= pkg.assets %>js/vendor/plugins/jquery.flexslider-min.js',
+					'<%= pkg.assets %>js/vendor/fastclick.js',
 					'<%= pkg.assets %>js/scripts.min.js',
-					'<%= pkg.assets %>js/custom/cookies.js',
 					'<%= pkg.assets %>js/custom/navigation.js',
 					'<%= pkg.assets %>js/components.js'
 				],
@@ -56,7 +59,14 @@ module.exports = function(grunt) {
 				tasks: ['sass', 'postcss']
 			},
 			scripts: {
-				files: ['<%= pkg.assets %>js/<%= pkg.name %>.js'],
+				files: [					'<%= pkg.assets %>js/vendor/jquery-3.1.1.min.js',
+					'<%= pkg.assets %>js/vendor/plugins/jquery.throttle-debounce.js',
+					'<%= pkg.assets %>js/vendor/plugins/jquery.inview.min.js',
+					'<%= pkg.assets %>js/vendor/plugins/jquery.flexslider-min.js',
+					'<%= pkg.assets %>js/vendor/fastclick.js',
+					'<%= pkg.assets %>js/scripts.min.js',
+					'<%= pkg.assets %>js/custom/navigation.js',
+					'<%= pkg.assets %>js/components.js'],
 				tasks: ['concat', 'uglify']
 			}			
 		}

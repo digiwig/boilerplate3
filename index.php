@@ -20,9 +20,9 @@
 	<link rel="stylesheet" href="/css/ie.css" type="text/css" media="all" />
 
 </head>
-<body class="home">
+<body>
 <input id="menu" type="checkbox">
-<header class="squishy">
+<header class="squishy autohide">
 	<div>
 		<a href="">LOGO</a>
 		<nav>
@@ -296,8 +296,6 @@
 	<div class="cookies-inner">
 		<div>
 			<p>This website uses cookies. By continuing to browse the site you are agreeing to our use of cookies. For more details about cookies and how to manage them, <a href="https://ico.org.uk/for-the-public/online/cookies/" target="_blank">see here</a>.</p>
-<!-- 			<p>This website uses cookies to improve user experience. By using our website you consent to our use of cookies.</p>
-			<p><a href="https://ico.org.uk/for-the-public/online/cookies/" target="_blank">Find out how to delete, block and manage cookies here</a>.</p> -->
 		</div>
 		<a class="button small">I got it!</a>
 	</div>
@@ -321,18 +319,19 @@
 		};
 		head.appendChild(script);
 	}
-	getScript("/js/vendor/jquery-3.1.1.min.js",function(){	
-		if('ontouchstart' in window || navigator.msMaxTouchPoints){
-			getScript("/js/vendor/fastclick.js");			
-		}	
-		getScript("/js/vendor/plugins/jquery.flexslider-min.js", function() {
-			getScript("/js/scripts.min.js", function() {
-				getScript("/js/custom/navigation.js");
-				getScript("/js/components.js");
-			});
-		});
-
-	});
+	getScript("/js/digiwig.js");
+	
+	// getScript("/js/vendor/jquery-3.1.1.min.js",function(){	
+	// 	if('ontouchstart' in window || navigator.msMaxTouchPoints){
+	// 		getScript("/js/vendor/fastclick.js");			
+	// 	}	
+	// 	getScript("/js/vendor/plugins/jquery.flexslider-min.js", function() {
+	// 		getScript("/js/scripts.min.js", function() {
+	// 			getScript("/js/custom/navigation.js");
+	// 			getScript("/js/components.js");
+	// 		});
+	// 	});
+	// });
 })();
 </script>
 </body>
