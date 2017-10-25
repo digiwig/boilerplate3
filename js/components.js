@@ -15,7 +15,7 @@ var BP3 = BP3 || {};
 		}
 	};	
 
-	BP3.check = function(element) { 
+	BP3.check = function(element) {
 		$(element).prop('checked', true);	
 	}
 
@@ -65,16 +65,20 @@ var BP3 = BP3 || {};
 	************************************************************************/
 
 	BP3.autoHideHeader = function() {
-		var lastScrollTop = 0;
-		$(window).on("scroll", $.debounce( 250,false, function(e) {
+
+		 var lastScrollTop = 0,
+		 	 header = $(".autohide");
+		 	 
+		$(window).on("scroll", function() {
 			var st = $(this).scrollTop();
 			if (st > lastScrollTop){
-				$(".autohide").addClass("hidden");
+				header.addClass("hidden");
 			} else {
-				$(".autohide").removeClass("hidden");
+				header.removeClass("hidden");
 			}
 			lastScrollTop = st;
-		}));
+		});
+
 	}
 
 	/* NOTIFCATION BAR

@@ -319,7 +319,7 @@
 		};
 		head.appendChild(script);
 	}
-	getScript("/js/digiwig.js");
+	getScript("/js/bp3.js");
 	
 	// getScript("/js/vendor/jquery-3.1.1.min.js",function(){	
 	// 	if('ontouchstart' in window || navigator.msMaxTouchPoints){
