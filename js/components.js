@@ -67,11 +67,12 @@ var BP3 = BP3 || {};
 	BP3.autoHideHeader = function() {
 
 		 var lastScrollTop = 0,
-		 	 header = $(".autohide");
+		 	 header = $(".autohide"),
+		 	 hideon = 500;
 		 	 
 		$(window).on("scroll", function() {
 			var st = $(this).scrollTop();
-			if (st > lastScrollTop){
+			if (st > lastScrollTop & st >= hideon){
 				header.addClass("hidden");
 			} else {
 				header.removeClass("hidden");
