@@ -82,27 +82,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="max">
-		<div class="component-row">
-			<h1>Tabs</h1>
-			<div class="tabs">
-				<input type="radio" name="tab" id="tab-1" checked>
-				<label for="tab-1">Tab A</label>
-				<div>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				</div>
-				<input type="radio" name="tab" id="tab-2">	
-				<label for="tab-2">Tab B</label>
-				<div>
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-				</div>
-				<input type="radio" name="tab" id="tab-3">	
-				<label for="tab-3">Tab C</label>
-				<div>
-					<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-				</div>
-			</div>
-		</div>		
+	<section class="max">		
 		<div class="component-row">
 			<h1>Breadcrumb</h1>
 			<div class="breadcrumb">
@@ -206,7 +186,28 @@
 			<a class="button notify" data-notify="Wait, I'm up here..." data-position="top" data-color="green">Green</a>
 			<a class="button notify" data-notify="No, I'm down here..." data-position="bottom" data-color="red">Red</a>
 			<a class="button notify" data-notify="Woah!" data-position="top" data-color="#8bd0ea">Any colour you like!</a>
-		</div>		
+		</div>
+		<div class="component-row">
+			<h1>Tabs</h1>
+			<p>Javascript free! Is this a world first?</p>			
+			<div class="tabs">
+				<input type="radio" name="tab" id="tab-1" checked>
+				<label for="tab-1">BP3</label>
+				<div>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				<input type="radio" name="tab" id="tab-2">	
+				<label for="tab-2">Components</label>
+				<div>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+				</div>
+				<input type="radio" name="tab" id="tab-3">	
+				<label for="tab-3">Awesome Javascript Free Tabs</label>
+				<div>
+					<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+				</div>
+			</div>
+		</div>
 		<div class="component-row">
 			<h1>Radio Accordions</h1>
 			<div class="accordion">

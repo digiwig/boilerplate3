@@ -1,35 +1,74 @@
 .tabs {
-	display:flex;
-	flex-wrap:wrap;
-	width:100%;
-	input {
-		display: none;
-		&:checked {
-			& + label {
-				border-bottom:2px solid invert($primary);
-				background:#fff;
-				& + div {
-					display: block;
+	@media #{$default} {
+		display:flex;
+		flex-wrap:wrap;
+		width:100%;
+		input {
+			display: none;
+			&:checked {
+				& + label {
+					background:#fff;
+					& + div {
+						display: block;
+					}
 				}
 			}
 		}
-	}
-	label {
-		padding:$padding $padding*2;
-		background:rgba(color("white"), 0.75);
-		color:black;
-		cursor: pointer;
-		border-bottom:2px solid color("black");
-		@include hover {
-			border-bottom:2px solid invert($primary);
+		label {
+			padding:$padding $padding*2;
+			background:rgba(color("white"), 0.75);
+			color:black;
+			cursor: pointer;
+			background:rgba(white, 0.5);
+			transition: all $speed ease-in-out;
+			@include hover {
+				transition: none;
+				background:rgba(white, 0.75);
+			}		
+		}
+		> div {
+			width:100%;
+			order:	99;
+			padding:$padding*2;
+			background: white;	
+			display: none;	
 		}		
 	}
-	> div {
-		width:100%;
-		order:	99;
-		padding:$padding*2;
-		background: white;	
-		display: none;	
+	@media #{$respond} {
+		input {
+			display:none;
+			&:checked {
+				& + label{
+					&:after {
+						content: "\e80D";
+					}
+					& + div {
+						display: block;
+					}
+				}
+			}
+		}
+		label {
+			padding:$padding;
+			display: flex;
+			justify-content: space-between;
+			border-bottom:1px dotted #ccc;
+			background:white;
+			@include hover {
+				background:#eee;
+			}		
+			&:after {
+				font-family: 'ui';
+				content:'\e80C';
+				display: block;
+			}			
+		}
+		> div {
+			display:none;
+			padding:$padding;
+			border-bottom:1px dotted #ccc;
+			background: white;			
+		}
 	}
 }
 
