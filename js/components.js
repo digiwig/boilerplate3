@@ -188,6 +188,37 @@ var BP3 = BP3 || {};
 
 	}
 
+	/* TABS
+	************************************************************************/
+	BP3.tabs = function() {
+
+		var tabs = $(".tabs .switch"),
+		tabsRadio = $(".tabs input:radio + label");
+
+		// Close radio type on click - Mobile only
+		
+		tabsRadio.bind("click touchend", function() {
+			if($( window ).width() <= 767) {	
+				var input = $("input[id='"+$(this).attr('for')+"']");	
+				if (input.is(':checked')) {
+					BP3.uncheck(input);
+					return false;
+				}
+			}
+		});
+
+		// On resize, make sure at least one tab is open
+
+		$(window).resize( $.throttle( 250, function(){
+			if($( window ).width() >= 768) {
+				if(!$(".tabs .switch:checked").length) {
+					BP3.check(tabs.first()); 
+				}				
+			}			
+		} ) );
+
+	}	
+
 	/* ACCORDIONS
 	************************************************************************/
 
@@ -203,7 +234,7 @@ var BP3 = BP3 || {};
 		// Close radio type on click
 
 		accordionRadio.bind("click touchend", function() {	
-			var input = $("input[id='"+$(this).attr('for')+"']");	
+			var input = $("input[id='"+$(this).attr('for')+"']");
 			if (input.is(':checked')) {
 				BP3.uncheck(input);
 				return false;
@@ -256,6 +287,10 @@ var BP3 = BP3 || {};
 		if(BP3.exist(".modal")) {
 			BP3.modals();
 		}
+
+		if(BP3.exist(".tabs")) {
+			BP3.tabs();
+		}		
 
 		if(BP3.exist(".accordion")) {
 			BP3.accordions();
