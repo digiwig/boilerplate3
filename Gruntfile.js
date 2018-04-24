@@ -9,14 +9,13 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				src: [
-					'<%= pkg.assets %>js/vendor/jquery-3.1.1.min.js',
-					'<%= pkg.assets %>js/vendor/plugins/jquery.throttle-debounce.js',
-					'<%= pkg.assets %>js/vendor/plugins/jquery.inview.min.js',
-					'<%= pkg.assets %>js/vendor/plugins/jquery.flexslider-min.js',
-					'<%= pkg.assets %>js/vendor/fastclick.js',
-					'<%= pkg.assets %>js/scripts.min.js',
-					'<%= pkg.assets %>js/custom/navigation.js',
-					'<%= pkg.assets %>js/components.js'
+					'<%= pkg.assets %>js/src/vendor/jquery-3.3.1.js',
+					'<%= pkg.assets %>js/src/vendor/plugins/jquery.throttle-debounce.js',
+					'<%= pkg.assets %>js/src/vendor/plugins/jquery.inview.min.js',
+					'<%= pkg.assets %>js/src/vendor/plugins/jquery.flexslider-min.js',
+					'<%= pkg.assets %>js/src/vendor/fastclick.js',
+					'<%= pkg.assets %>js/src/custom/navigation.js',
+					'<%= pkg.assets %>js/src/components.js'
 				],
 				dest: '<%= pkg.assets %>js/<%= pkg.name %>.js'
 			}
@@ -59,16 +58,9 @@ module.exports = function(grunt) {
 				tasks: ['sass', 'postcss']
 			},
 			scripts: {
-				files: [					'<%= pkg.assets %>js/vendor/jquery-3.1.1.min.js',
-					'<%= pkg.assets %>js/vendor/plugins/jquery.throttle-debounce.js',
-					'<%= pkg.assets %>js/vendor/plugins/jquery.inview.min.js',
-					'<%= pkg.assets %>js/vendor/plugins/jquery.flexslider-min.js',
-					'<%= pkg.assets %>js/vendor/fastclick.js',
-					'<%= pkg.assets %>js/scripts.min.js',
-					'<%= pkg.assets %>js/custom/navigation.js',
-					'<%= pkg.assets %>js/components.js'],
+				files: ['<%= concat.dist.src %>'],
 				tasks: ['concat', 'uglify']
-			}			
+			}
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-uglify');

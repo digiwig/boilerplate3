@@ -1,13 +1,36 @@
-// Namespace.
-var BP3 = BP3 || {};
+var BP3 = BP3 || {},
+	supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
 ( function( $ ) {
 	
 	'use strict';
 
-	// VARS
+	/* VARS
+	************************************************************************/
 
-	// GLOBALS
+	var createCookie = function (name, value, days) {
+		if (days) {
+			var date = new Date();
+			date.setTime(date.getTime() + (days * 60 * 60 * 1000)); //so it's hours now actually -MT
+			var expires = "; expires=" + date.toGMTString();
+		}
+		else var expires = "";
+		document.cookie = name + "=" + value + expires + "; path=/";
+	};
+
+	var readCookie = function (name) { 
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for (var i = 0; i < ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+		}
+		return null;
+	};		
+
+	/* GLOBAL FUNCTIONS
+	************************************************************************/
 
 	BP3.exist = function(element) {
 		if ($(element).length > 0) {
@@ -23,8 +46,13 @@ var BP3 = BP3 || {};
 		element.prop('checked', false);	
 	}	
 
-
-	// COMPONENTS
+	BP3.fastClick = function() {
+		// if(supportsTouch) {
+		// 	$(function() {
+		// 		FastClick.attach(document.body);
+		// 	});
+		// }
+	}
 
 	/* COOKIE NOTICE 
 	************************************************************************/
@@ -258,6 +286,8 @@ var BP3 = BP3 || {};
 	************************************************************************/
 
 	BP3.init = function() {
+
+		BP3.fastClick();
 
 		if(BP3.exist(".cookies")) {
 			BP3.cookieNotice();

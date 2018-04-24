@@ -130,15 +130,15 @@
 				</div>
 
 				<div class="form-field color-white">
-					<input type="checkbox" name="checkbox" id="checkbox-1" value="1"><label for="checkbox-1">One</label>
-					<input type="checkbox" name="checkbox" id="checkbox-2" value="2"><label for="checkbox-2">I agree to the <a href="">terms and conditions</a></label>
-					<input type="checkbox" name="checkbox" id="checkbox-3" value="3"><label for="checkbox-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</label>
+					<input type="checkbox" name="form-element-checkbox" id="form-element-checkbox-1" value="1"><label for="form-element-checkbox-1">One</label>
+					<input type="checkbox" name="form-element-checkbox" id="form-element-checkbox-2" value="2"><label for="form-element-checkbox-2">I agree to the <a href="">terms and conditions</a></label>
+					<input type="checkbox" name="form-element-checkbox" id="form-element-checkbox-3" value="3"><label for="form-element-checkbox-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</label>
 				</div>
 
 				<div class="form-field color-white">
-					<input type="radio" name="radio" id="radio-1" value="1"><label for="radio-1">One</label>
-					<input type="radio" name="radio" id="radio-2" value="2"><label for="radio-2">Two</label>
-					<input type="radio" name="radio" id="radio-3" value="3"><label for="radio-3">Three</label>
+					<input type="radio" name="form-element-radio" id="form-element-radio-1" value="1"><label for="form-element-radio-1">One</label>
+					<input type="radio" name="form-element-radio" id="form-element-radio-2" value="2"><label for="form-element-radio-2">Two</label>
+					<input type="radio" name="form-element-radio" id="form-element-radio-3" value="3"><label for="form-element-radio-3">Three</label>
 				</div>	
 
 				<div class="form-field">
@@ -406,18 +406,6 @@
 		head.appendChild(script);
 	}
 	getScript("/js/bp3.js");
-	
-	// getScript("/js/vendor/jquery-3.1.1.min.js",function(){	
-	// 	if('ontouchstart' in window || navigator.msMaxTouchPoints){
-	// 		getScript("/js/vendor/fastclick.js");			
-	// 	}	
-	// 	getScript("/js/vendor/plugins/jquery.flexslider-min.js", function() {
-	// 		getScript("/js/scripts.min.js", function() {
-	// 			getScript("/js/custom/navigation.js");
-	// 			getScript("/js/components.js");
-	// 		});
-	// 	});
-	// });
 })();
 </script>
 </body>
