@@ -14,6 +14,7 @@
 	p {
 		&:last-child {
 			font-size:0.8em;
+			text-align:right;
 		}
 	}
 
@@ -21,7 +22,7 @@
 	input[type='email'],
 	input[type='number'],
 	textarea,
-	select, {
+	select {
 		border:none;
 		width:100%;
 		padding:15px;
@@ -30,6 +31,59 @@
 		resize:none;
 		font-family:Arial;
 		font-size:1em;
+	}
+
+	input[type='checkbox'], input[type='radio'] {
+
+		display:none;
+
+		& + label {
+			display:block;
+			margin:0;
+			&:before {
+				font-family:'ui';
+				margin-right:5px;
+			}
+		}
+
+		&[type='checkbox'] {
+			& + label {
+				&:before {
+					content: '\e803'; 
+				}
+			}
+			&:checked {
+				& + label {
+					&:before {
+						content: '\e802';
+					}
+				}				
+			}
+		}
+
+		&[type='radio'] {
+			& + label {
+				&:before {
+					content: '\f1db'; 
+				}
+			}
+			&:checked {
+				& + label {
+					&:before {
+						content: '\f111';
+					}
+				}				
+			}
+		}		
+
+	}
+
+	input[type='submit'], input[type='button'] {
+		@extend .button;
+		border:none;	
+		background:color("white");
+		font-family:Arial;
+		font-size:1em;	
 	}
 
 	textarea {
@@ -75,7 +129,6 @@
 			&:checked {
 				background: invert($primary) linear-gradient(0deg, invert($primary) 0%, invert($primary) 100%);
 			}
-
 			&:after {
 				pointer-events:none;
 				width:auto;
@@ -86,7 +139,8 @@
 				color:color("white");	
 				display:block;
 				margin-left:auto;
-			}
+			}			
+
 		}
 
 	}
@@ -97,6 +151,8 @@
 
 
 .form-group {}
+
+
 
 // .form-elements {
 // 	color:white;

@@ -46,7 +46,7 @@
 						<div class="content">
 							<h1>Hero Slider</h1>
 							<p>One liner paragraph text goes here.</p>
-							<a class="button rounded" href="#">Button</a>
+							<a class="button button-rounded" href="#">Button</a>
 						</div>
 					</div>
 				</div>
@@ -55,7 +55,7 @@
 						<div class="content align-left">
 							<h1>Left Aligned Contents</h1>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
-							<a class="button rounded" href="#">Button</a>
+							<a class="button button-rounded" href="#">Button</a>
 						</div>
 					</div>
 				</div>
@@ -64,7 +64,7 @@
 						<div class="content align-right">
 							<h1>Right Align It</h1>
 							<p>One liner paragraph text goes here.</p>
-							<a class="button rounded" href="#">Button</a>
+							<a class="button button-rounded" href="#">Button</a>
 						</div>
 					</div>
 				</div>
@@ -77,7 +77,7 @@
 				<div class="content">
 					<h1>Stand Alone Hero</h1>
 					<p>One liner paragraph text goes here.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.<br>And then it goes down a line.</p>
-					<a class="button rounded" href="#">Button</a>
+					<a class="button button-rounded" href="#">Button</a>
 				</div>
 			</div>
 		</div>
@@ -129,39 +129,23 @@
 					<p>Help text for the field above.</p>
 				</div>
 
-
-
-				<!-- <div class="u-4-12 m-12-12 form-elements">
-					<h2>Text, Email and Number Fields</h2>
-					<input type="text" placeholder="Text Field">
-					<input type="email" placeholder="Email Field">
-					<input type="number">
+				<div class="form-field color-white">
+					<input type="checkbox" name="checkbox" id="checkbox-1" value="1"><label for="checkbox-1">One</label>
+					<input type="checkbox" name="checkbox" id="checkbox-2" value="2"><label for="checkbox-2">I agree to the <a href="">terms and conditions</a></label>
+					<input type="checkbox" name="checkbox" id="checkbox-3" value="3"><label for="checkbox-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</label>
 				</div>
-				<div class="u-4-12 m-12-12 form-elements">
-					<h2>Checkbox, Radio, and Select Fields</h2>					
-					<div class="row">
-						<div>
-							<input type="checkbox" id="checkbox1" name="checkbox"><label for="checkbox1" class="icon-ui-check-empty">Checkbox 1</label>
-							<input type="checkbox" id="checkbox2" name="checkbox"><label for="checkbox2" class="icon-ui-check-empty">Checkbox 2</label>
-							<input type="checkbox" id="checkbox3" name="checkbox"><label for="checkbox3" class="icon-ui-check-empty">Checkbox 3</label>
-						</div>
-						<div>
-							<input type="radio" id="radio1" name="radio"><label for="radio1" class="icon-ui-circle-thin">Radio 1</label>
-							<input type="radio" id="radio2" name="radio"><label for="radio2" class="icon-ui-circle-thin">Radio 2</label>
-							<input type="radio" id="radio3" name="radio"><label for="radio3" class="icon-ui-circle-thin">Radio 3</label>
-						</div>
-					</div>
-					<div class="select icon-down-open-mini">
-						<select>
-							<option>Option Value 1</option>
-							<option>Option Value 2</option>
-							<option>Option Value 3</option>
-						</select>
-					</div>
-				</div>
-				<div class="u-4-12 m-12-12 form-elements">
 
-				</div> -->
+				<div class="form-field color-white">
+					<input type="radio" name="radio" id="radio-1" value="1"><label for="radio-1">One</label>
+					<input type="radio" name="radio" id="radio-2" value="2"><label for="radio-2">Two</label>
+					<input type="radio" name="radio" id="radio-3" value="3"><label for="radio-3">Three</label>
+				</div>	
+
+				<div class="form-field">
+					<input type="submit" value="Submit">
+					<input type="button" value="Button">
+				</div>			
+
 
 		</div>
 		<div class="component-row">
@@ -179,7 +163,7 @@
 							<date>28th February</date>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>							
 						</div>
-						<div><a href="#" class="button rounded">Read More</a></div>
+						<div><a href="#" class="button button-rounded">Read More</a></div>
 					</div>
 					<div class="u-4-12 m-12-12 content-card">
 						<figure>
@@ -216,7 +200,7 @@
 								<span>Senior Web Developer</span>
 							</div>
 						</div>							
-						<div><a href="#" class="button rounded">Read More</a></div>
+						<div><a href="#" class="button button-rounded">Read More</a></div>
 						<div class="stats">
 							<a class="icon-ui-eye">69</a>
 							<a class="icon-ui-heart">23</a>
@@ -399,7 +383,7 @@
 		<div>
 			<p>This website uses cookies. By continuing to browse the site you are agreeing to our use of cookies. For more details about cookies and how to manage them, <a href="https://ico.org.uk/for-the-public/online/cookies/" target="_blank">see here</a>.</p>
 		</div>
-		<a class="button small">I got it!</a>
+		<a class="button button-small">I got it!</a>
 	</div>
 </div>
 <script type="text/javascript">
