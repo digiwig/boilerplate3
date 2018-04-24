@@ -8,10 +8,10 @@
 
 @function set-contrast-color($color) {
 	@if (lightness($color) > 50) {
-		@return lighten($color, 10%);
+		@return black
 	}
 	@else {
-		@return lighten($color, 15%);
+		@return white;
 	}
 }
 

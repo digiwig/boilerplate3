@@ -28,7 +28,7 @@
 		width:100%;
 		padding:15px;
 		border-radius:0;	
-		background:color("white");
+		background:white;
 		resize:none;
 		font-family:Arial;
 		font-size:1em;
@@ -89,7 +89,7 @@
 	input[type='submit'], input[type='button'] {
 		@extend .button;
 		border:none;	
-		background:color("white");
+		background:white;
 		font-family:Arial;
 		font-size:1em;	
 	}
@@ -111,7 +111,7 @@
 			line-height:inherit;
 			padding:15px;
 			margin:0;
-			background:color("white");
+			background:white;
 		}
 		select {
 			appearance:none;
@@ -144,7 +144,7 @@
 				margin:0;	
 				font-family: 'ui';
 				content: '\e80e';
-				color:color("white");	
+				color:white;	
 				display:block;
 				margin-left:auto;
 			}			
