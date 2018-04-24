@@ -120,6 +120,11 @@ section {
 			color:color("white");
 		}
 	}
+
+	.form-elements h2 {
+		color:white;
+		margin-bottom: $margin;
+	}
 }
 
 .button + .button {

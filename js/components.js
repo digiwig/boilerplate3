@@ -70,7 +70,7 @@ var BP3 = BP3 || {};
 		 	 header = $(".autohide"),
 		 	 hideon = 500;
 		 	 
-		$(window).on("scroll", function() {
+		$(window).on("load scroll", function() {
 			var st = $(this).scrollTop();
 			if (st > lastScrollTop & st >= hideon){
 				header.addClass("hidden");
@@ -150,7 +150,7 @@ var BP3 = BP3 || {};
 		    start: function(slider){
 		    	slider.addClass("active");
 		    	slider.children(".flex-control-paging").detach().appendTo(slider.parent());;
-		    },		
+		    },
 		});			
 	}
 

@@ -92,6 +92,78 @@
 				<a href="#">Demo</a>
 			</div>
 		</div>
+		<div class="component-row grid15" id="form-elements">
+			<h1>Form Elements</h1>	
+
+				<div class="form-field color-white">
+					<input type="text" placeholder="Text Field">
+				</div>
+
+				<div class="form-field color-white">
+					<input type="email" placeholder="Email Field">
+				</div>
+
+				<div class="form-field color-white">
+					<input type="number" placeholder="Number Field">
+				</div>
+
+				<div class="form-field select icon-arrows-down-open">
+					<select>
+						<option disabled selected>Select Field</option>
+						<option>Yes</option>
+						<option>No</option>
+					</select>
+				</div>	
+
+				<div class="form-field">
+					<select multiple="multiple" size="3">
+						<option>One</option>
+						<option>Two</option>
+						<option>Three</option>
+					</select>
+				</div>	
+
+				<div class="form-field color-white">
+					<p>Descriptive text of the field below.</p>
+					<textarea placeholder="Lorem ipsum..."></textarea>
+					<p>Help text for the field above.</p>
+				</div>
+
+
+
+				<!-- <div class="u-4-12 m-12-12 form-elements">
+					<h2>Text, Email and Number Fields</h2>
+					<input type="text" placeholder="Text Field">
+					<input type="email" placeholder="Email Field">
+					<input type="number">
+				</div>
+				<div class="u-4-12 m-12-12 form-elements">
+					<h2>Checkbox, Radio, and Select Fields</h2>					
+					<div class="row">
+						<div>
+							<input type="checkbox" id="checkbox1" name="checkbox"><label for="checkbox1" class="icon-ui-check-empty">Checkbox 1</label>
+							<input type="checkbox" id="checkbox2" name="checkbox"><label for="checkbox2" class="icon-ui-check-empty">Checkbox 2</label>
+							<input type="checkbox" id="checkbox3" name="checkbox"><label for="checkbox3" class="icon-ui-check-empty">Checkbox 3</label>
+						</div>
+						<div>
+							<input type="radio" id="radio1" name="radio"><label for="radio1" class="icon-ui-circle-thin">Radio 1</label>
+							<input type="radio" id="radio2" name="radio"><label for="radio2" class="icon-ui-circle-thin">Radio 2</label>
+							<input type="radio" id="radio3" name="radio"><label for="radio3" class="icon-ui-circle-thin">Radio 3</label>
+						</div>
+					</div>
+					<div class="select icon-down-open-mini">
+						<select>
+							<option>Option Value 1</option>
+							<option>Option Value 2</option>
+							<option>Option Value 3</option>
+						</select>
+					</div>
+				</div>
+				<div class="u-4-12 m-12-12 form-elements">
+
+				</div> -->
+
+		</div>
 		<div class="component-row">
 			<h1>Content Cards</h1>
 			<p>Modular layers can be used in any order.</p>
