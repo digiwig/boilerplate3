@@ -94,7 +94,7 @@
 		</div>
 		<div class="component-row grid15" id="form-elements">
 			<h1>Form Elements</h1>	
-
+			<form>
 				<div class="form-field color-white">
 					<input type="text" placeholder="Text Field">
 				</div>
@@ -124,28 +124,28 @@
 				</div>	
 
 				<div class="form-field color-white">
-					<p>Descriptive text of the field below.</p>
+					<p class="description">Descriptive text of the field below.</p>
 					<textarea placeholder="Lorem ipsum..."></textarea>
-					<p>Help text for the field above.</p>
+					<p class="help">Help text for the field above.</p>
 				</div>
 
 				<div class="form-field color-white">
-					<input type="checkbox" name="form-element-checkbox" id="form-element-checkbox-1" value="1"><label for="form-element-checkbox-1">One</label>
-					<input type="checkbox" name="form-element-checkbox" id="form-element-checkbox-2" value="2"><label for="form-element-checkbox-2">I agree to the <a href="">terms and conditions</a></label>
-					<input type="checkbox" name="form-element-checkbox" id="form-element-checkbox-3" value="3"><label for="form-element-checkbox-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</label>
+					<input type="checkbox" name="form-element-checkbox" id="form-element-checkbox-1" value="1"><label for="form-element-checkbox-1">Checkbox One</label>
+					<input type="checkbox" name="form-element-checkbox" id="form-element-checkbox-2" value="2"><label for="form-element-checkbox-2"><p>I agree to the <a href="">terms and conditions</a></p></label>
+					<input type="checkbox" name="form-element-checkbox" id="form-element-checkbox-3" value="3"><label for="form-element-checkbox-3"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></label>
 				</div>
 
 				<div class="form-field color-white">
-					<input type="radio" name="form-element-radio" id="form-element-radio-1" value="1"><label for="form-element-radio-1">One</label>
-					<input type="radio" name="form-element-radio" id="form-element-radio-2" value="2"><label for="form-element-radio-2">Two</label>
-					<input type="radio" name="form-element-radio" id="form-element-radio-3" value="3"><label for="form-element-radio-3">Three</label>
+					<input type="radio" name="form-element-radio" id="form-element-radio-1" value="1"><label for="form-element-radio-1">Radio One</label>
+					<input type="radio" name="form-element-radio" id="form-element-radio-2" value="2"><label for="form-element-radio-2">Radio Two</label>
+					<input type="radio" name="form-element-radio" id="form-element-radio-3" value="3"><label for="form-element-radio-3">Radio Three</label>
 				</div>	
 
 				<div class="form-field">
 					<input type="submit" value="Submit">
 					<input type="button" value="Button">
 				</div>			
-
+			</form>
 
 		</div>
 		<div class="component-row">

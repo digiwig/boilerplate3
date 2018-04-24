@@ -12,9 +12,10 @@
 	}
 
 	p {
-		&:last-child {
+		&.description {}
+		&.help {
 			font-size:0.8em;
-			text-align:right;
+			text-align:right;			
 		}
 	}
 
@@ -38,11 +39,18 @@
 		display:none;
 
 		& + label {
-			display:block;
+			display:flex;
+			align-items:center;	
+			line-height:18px;	
 			margin:0;
+			& ~ label {
+				margin-top:5px;
+			}
 			&:before {
 				font-family:'ui';
-				margin-right:5px;
+				margin-right:8px;
+				font-size:1.4rem;
+				align-self:flex-start;
 			}
 		}
 
