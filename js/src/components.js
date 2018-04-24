@@ -276,7 +276,7 @@ var BP3 = BP3 || {},
 
 	BP3.googleMap = function() {
 		$.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyCWg6EsSlK-EmCdimmWNodJr4adyFK_uAM", function() {
-			$.getScript( "js/custom/map.js");
+			$.getScript( "js/src/custom/map.js");
 		});
 	}
 
