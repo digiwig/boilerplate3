@@ -3,20 +3,21 @@
 	a {
 		font-size:1rem;
 		font-weight:700;
-		color:color("white");
 		& + a {
 			margin-left: 0.5em;
 			&:before {
-				color:color("white");
 				margin-right: 0.5em;
 				content: "/";
 			}
 		}
 		&:last-child {
 			color:invert($primary);
+			&:before {
+				color:$body-color;
+			}
 		}
 		@include hover {
-			color:rgba(color("white"), 0.5);
+			color:rgba($body-color, 0.5);
 		}
 	}
 }

@@ -22,11 +22,9 @@
 				font-size:60px;
 				transition: all $speed linear;
 				text-decoration: none;
-				color:#fff; 
 			}	
 			nav {
 				a {
-					color:color("white");
 					text-decoration: none;
 					& + a {
 						margin-left:$margin-small;
@@ -63,7 +61,6 @@
 				font-family: $heading-font;
 				font-size:1.8em;
 				text-decoration: none;
-				color:#fff;
 			}
 			nav {
 				display: none;

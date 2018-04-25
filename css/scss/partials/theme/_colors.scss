@@ -10,7 +10,7 @@ $colors: (
 	"white":	#ffffff,
 );
 
-$primary:color("blue");
+$primary:color("blue"); 
 
 /* background colours */
 @each $name, $hex in $colors {
@@ -23,3 +23,6 @@ $primary:color("blue");
 }
 
 $body-color:set-contrast-color($primary);
+$constrast-color:set-contrast-color($body-color);
+
+

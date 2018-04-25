@@ -42,7 +42,6 @@ header {
 			text-align: center;
 			&:before {
 				content: '\e806';
-				color:#fff;
 			}
 			@include hover {
 				background:lighten($primary, 30%);
@@ -84,19 +83,16 @@ section {
 	}
 
 	> h1 {
-		color:white;
 		font-size:2em;
-		border-bottom:1px solid white;
+		border-bottom:1px solid $body-color;
 		padding-bottom: $padding;
 		margin-bottom: $margin;
 		+ p {
 			margin-bottom:$margin;
-			color:color("white");
 		}
 	}
 
 	.form-elements h2 {
-		color:white;
 		margin-bottom: $margin;
 	}
 }
@@ -112,7 +108,8 @@ section {
 	[class^="row"] {
 		> * {		
 			min-height:100px;
-			background:#fff;
+			background:$body-color;
+			color:$constrast-color;
 			line-height: 100px;
 			text-align:center;
 			align-content:center;

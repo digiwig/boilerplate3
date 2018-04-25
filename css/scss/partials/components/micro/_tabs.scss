@@ -32,6 +32,7 @@
 			padding:$padding*2;
 			background: white;	
 			display: none;	
+			color:$constrast-color;
 		}		
 	}
 	@media #{$respond} {
@@ -67,7 +68,8 @@
 			display:none;
 			padding:$padding;
 			border-bottom:1px dotted #ccc;
-			background: white;			
+			background: white;	
+			color:$constrast-color;		
 		}
 	}
 }
