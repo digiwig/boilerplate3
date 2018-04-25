@@ -64,7 +64,7 @@
 		font-size:1.4em;
 		font-weight:700;
 		font-family: 'Raleway', sans-serif;
-		color:$constrast-color;
+		color:color("black");
 		@include hover {
 			color:complement($primary);
 		}		
@@ -89,9 +89,12 @@
 			}
 		}
 		.name_title {
+
 			span {
 				display: block;
+				color:color("black");
 				&:last-child {
+					color:grey;
 					margin-top:0.5em;
 					font-size:0.75em;
 				}
@@ -123,7 +126,7 @@
 	.button {
 		width:100%;
 		text-align: center;
-		color:#fff;
+		color:color("white");
 		background: invert($primary);
 		@include hover {
 			background:#ccc;

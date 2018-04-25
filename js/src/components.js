@@ -18,7 +18,7 @@ var BP3 = BP3 || {},
 		document.cookie = name + "=" + value + expires + "; path=/";
 	};
 
-	var readCookie = function (name) { 
+	var readCookie = function (name) {
 		var nameEQ = name + "=";
 		var ca = document.cookie.split(';');
 		for (var i = 0; i < ca.length; i++) {
@@ -47,11 +47,11 @@ var BP3 = BP3 || {},
 	}	
 
 	BP3.fastClick = function() {
-		// if(supportsTouch) {
-		// 	$(function() {
-		// 		FastClick.attach(document.body);
-		// 	});
-		// }
+		if(supportsTouch) {
+			$(function() {
+				FastClick.attach(document.body);
+			});
+		}
 	}
 
 	/* COOKIE NOTICE 

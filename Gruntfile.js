@@ -12,6 +12,7 @@ module.exports = function(grunt) {
 					'<%= pkg.assets %>js/src/vendor/jquery-3.3.1.js',
 					'<%= pkg.assets %>js/src/vendor/plugins/jquery.throttle-debounce.js',
 					'<%= pkg.assets %>js/src/vendor/plugins/jquery.inview.min.js',
+					'<%= pkg.assets %>js/src/vendor/plugins/jquery.validate.min.js',
 					'<%= pkg.assets %>js/src/vendor/plugins/jquery.flexslider-min.js',
 					'<%= pkg.assets %>js/src/vendor/fastclick.js',
 					'<%= pkg.assets %>js/src/custom/navigation.js',

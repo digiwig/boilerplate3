@@ -1,6 +1,6 @@
 .accordion {
 	background:#fff;
-	color:$constrast-color;
+	color:color("black");
 	input {
 		display:none;
 		&:checked {

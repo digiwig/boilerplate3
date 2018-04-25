@@ -32,7 +32,7 @@
 			padding:$padding*2;
 			background: white;	
 			display: none;	
-			color:$constrast-color;
+			color:color("black");
 		}		
 	}
 	@media #{$respond} {
@@ -69,7 +69,7 @@
 			padding:$padding;
 			border-bottom:1px dotted #ccc;
 			background: white;	
-			color:$constrast-color;		
+			color:color("black");	
 		}
 	}
 }
