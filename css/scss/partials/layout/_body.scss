@@ -1,0 +1,16 @@
+html {
+	font-size:$size;
+	height:100%;
+}
+
+body {
+	font-size:100%;
+	font-family:Arial;
+}
+
+html, body {
+	background:darken($primary, 20%);
+	@media #{$respond} {
+		font-size:$mobile-size;
+	}	
+}

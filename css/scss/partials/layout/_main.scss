@@ -1,0 +1,7 @@
+main {
+	background:$primary;
+	@media #{$respond} {
+		margin-top:55px;
+		transition:all $speed ease-in-out;
+	}	
+}

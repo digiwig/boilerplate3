@@ -1,2 +1,9 @@
+footer {
+	background:darken($primary, 10%);
+	@media #{$respond} {
+		transition:all $speed ease-in-out;
+	}
+}
+
 @import "../../partials/components/macro/_footer_menu.scss";
 @import "../../partials/components/macro/_legal-bar.scss";

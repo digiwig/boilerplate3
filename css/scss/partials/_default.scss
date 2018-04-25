@@ -59,37 +59,11 @@ header {
 @import "../partials/components/macro/_squishy-header.scss";
 @import "../partials/components/macro/_infinity-nav.scss";
 
-html {
-	font-size:$size;
-	height:100%;
-}
 
-body {
-	font-size:100%;
-	font-family:Arial;
-}
 
-html, body {
-	background:darken($primary, 20%);
-	@media #{$respond} {
-		font-size:$mobile-size;
-	}	
-}
 
-main {
-	background:$primary;
-	@media #{$respond} {
-		margin-top:55px;
-		transition:all $speed ease-in-out;
-	}	
-}
 
-footer {
-	background:darken($primary, 10%);
-	@media #{$respond} {
-		transition:all $speed ease-in-out;
-	}
-}
+
 
 section {
 	&.max {

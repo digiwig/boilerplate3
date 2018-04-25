@@ -21,3 +21,5 @@ $primary:color("blue");
 		color:#{$hex} !important;
 	}
 }
+
+$body-color:set-contrast-color($primary);
