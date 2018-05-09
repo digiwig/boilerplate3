@@ -155,7 +155,7 @@
 				<div class="row">
 					<div class="u-4-12 m-12-12 content-card">
 						<figure>
-							<a href="#"><img src="https://media.ed.edmunds-media.com/dodge/challenger/2010/oem/2010_dodge_challenger_coupe_srt8_fq_oem_3_500.jpg" width="100%" height="auto"></a>
+							<a href="#"><img src="/images/card-placeholder.jpg" width="100%" height="auto"></a>
 						</figure>
 						<div>
 							<span class="category">Category</span>
@@ -167,7 +167,7 @@
 					</div>
 					<div class="u-4-12 m-12-12 content-card">
 						<figure>
-							<a href="#"><img src="https://media.ed.edmunds-media.com/dodge/challenger/2010/oem/2010_dodge_challenger_coupe_srt8_fq_oem_3_500.jpg" width="100%" height="auto"></a>
+							<a href="#"><img src="/images/card-placeholder.jpg" width="100%" height="auto"></a>
 						</figure>
 						<div>
 							<date>28th February</date>
@@ -175,7 +175,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>							
 						</div>
 						<div class="user">
-							<a href="#" class="avatar"><img src="http://www.translationwebshop.com/wp-content/themes/translationwebshop/images/img_placeholder_avatar.jpg" width="50" height="50"></a>
+							<a href="#" class="avatar"><img src="/images/avatar.jpg" width="50" height="50"></a>
 							<div class="name_title">
 								<span>Mark Wigglesworth</span>
 								<span>Senior Web Developer</span>
@@ -184,7 +184,7 @@
 					</div>
 					<div class="u-4-12 m-12-12 content-card">
 						<figure>
-							<a href="#"><img src="https://media.ed.edmunds-media.com/dodge/challenger/2010/oem/2010_dodge_challenger_coupe_srt8_fq_oem_3_500.jpg" width="100%" height="auto"></a>
+							<a href="#"><img src="/images/card-placeholder.jpg" width="100%" height="auto"></a>
 							<figcaption>
 								<span class="category">Category</span>
 								<h2 class="title"><a href="#">Revenue and Profit Rise at Google, but Mobile Struggles Continue</a></h2>
@@ -194,7 +194,7 @@
 							<date>28th February</date>
 						</div>
 						<div class="user">
-							<a href="#" class="avatar"><img src="http://www.translationwebshop.com/wp-content/themes/translationwebshop/images/img_placeholder_avatar.jpg" width="50" height="50"></a>
+							<a href="#" class="avatar"><img src="/images/avatar.jpg" width="50" height="50"></a>
 							<div class="name_title">
 								<span>Mark Wigglesworth</span>
 								<span>Senior Web Developer</span>
