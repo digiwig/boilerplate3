@@ -1,13 +1,11 @@
-var canvas = $("#map");
-var longitude = canvas.data("longitude");
-var latitude = canvas.data("latitude");
-var desktopzoom = canvas.data("desktop-zoom");
-var tabletzoom = canvas.data("tablet-zoom");
-var mobilezoom = canvas.data("mobile-zoom");
-var info = canvas.data("info");
-var pin = canvas.data("pin");
-
-
+var canvas = $("#map"),
+    longitude = canvas.data("longitude"),
+    latitude = canvas.data("latitude"),
+    desktopzoom = canvas.data("desktop-zoom"),
+    tabletzoom = canvas.data("tablet-zoom"),
+    mobilezoom = canvas.data("mobile-zoom"),
+    info = canvas.data("info"),
+    pin = canvas.data("pin");
 
 var markers = [];
 
@@ -188,7 +186,7 @@ var styles = [
 map.setOptions({
     scaleControl: true, 
     draggable:true,
-    scrollwheel: true,
+    scrollwheel: false,
     styles: styles,
     mapTypeControl: true,
     zoomControl: true,
@@ -200,8 +198,6 @@ map.setOptions({
 var infowindow = new google.maps.InfoWindow();
 
 var marker, i;
-
-
 
 for (i = 0; i < main_locations.length; i++) {  
 
@@ -248,3 +244,10 @@ $(window).on("resize", function() {
         mapZoom();
     },1000);          
 });
+
+
+
+
+
+
+
