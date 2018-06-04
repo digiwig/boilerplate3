@@ -353,7 +353,7 @@
 		data-latitude="-0.1439478" 
 		data-desktop-zoom="12" 
 		data-tablet-zoom="14" 
-		data-mobile-zoom="16" 
+		data-mobile-zoom="12" 
 		data-info="<p><strong>Dublin, Ireland</strong></p><p>South County Business Park<br/>Leopardstown<br/>Dublin<br/>D18 T9P8</p>" 
 		data-pin="/images/icons/pin.png"></div>
 	</section>	
