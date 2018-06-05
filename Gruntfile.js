@@ -15,7 +15,6 @@ module.exports = function(grunt) {
 					'<%= pkg.assets %>js/src/vendor/plugins/jquery.validate.min.js',
 					'<%= pkg.assets %>js/src/vendor/plugins/jquery.flexslider-min.js',
 					'<%= pkg.assets %>js/src/vendor/fastclick.js',
-					'<%= pkg.assets %>js/src/custom/navigation.js',
 					'<%= pkg.assets %>js/src/components.js'
 				],
 				dest: '<%= pkg.assets %>js/<%= pkg.name %>.js'
