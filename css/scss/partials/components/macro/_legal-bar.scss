@@ -1,6 +1,6 @@
 .legal {
 	background:darken($primary, 15%);
-	padding:$padding-small $padding;	
+	padding:$padding;	
 	font-size:0.75em;
 	> div {
 		max-width: $width;
@@ -21,6 +21,9 @@
 		@media #{$respond} {
 			flex-direction: column;
 			text-align: center;	
+			p + p {
+				margin-top:$margin-small;
+			}
 		}
 	}
 }

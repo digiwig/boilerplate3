@@ -93,7 +93,7 @@
 				<a href="#">Demo</a>
 			</div>
 		</div>
-		<div class="component-row grid15" id="form-elements">
+		<div class="component-row grid" id="form-elements">
 			<h1>Form Elements</h1>	
 			<form>
 				<div class="form-field">
@@ -152,7 +152,7 @@
 		<div class="component-row">
 			<h1>Content Cards</h1>
 			<p>Modular layers can be used in any order.</p>
-			<div class="grid15">
+			<div class="grid">
 				<div class="row">
 					<div class="u-4-12 m-12-12 content-card">
 						<figure>
@@ -307,7 +307,7 @@
 		</div>
 		<div class="component-row">
 			<h1>Grids</h1>
-			<div class="grid15 demo">
+			<div class="grid demo">
 				<div class="row">
 					<div class="u-3-12"></div>
 					<div class="u-3-12"></div>
@@ -360,7 +360,7 @@
 	</section>	
 </main>
 <footer>
-	<div class="menu grid15">
+	<div class="menu grid">
 		<div class="row">
 			<div class="t-6-12 m-12-12">
 				<h3>Title Here</h3>
@@ -385,8 +385,18 @@
 				<nav></nav>
 			</div>
 			<div class="t-6-12 m-12-12">
-				<h3>Title Here</h3>
-				<nav></nav>
+				<h3>Newsletter</h3>
+				<form>
+					<div class="form-field">
+						<input type="email" placeholder="Email address">
+					</div>
+				</form>
+				<menu class="links-to-social-media">
+					<a class="icon-social-facebook"></a>
+					<a class="icon-social-twitter"></a>
+					<a class="icon-social-linkedin"></a>
+					<a class="icon-social-youtube"></a>
+				</menu>
 			</div>
 		</div>
 	</div>
