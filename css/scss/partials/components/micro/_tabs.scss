@@ -36,6 +36,9 @@
 		}		
 	}
 	@media #{$respond} {
+		label {
+			color:black;
+		}
 		input {
 			display:none;
 			&:checked {

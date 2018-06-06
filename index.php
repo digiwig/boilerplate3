@@ -1,7 +1,8 @@
-	<?php header("Content-type: text/html; charset=utf-8"); ?>
+<?php header("Content-type: text/html; charset=utf-8"); ?>
 <!doctype html>
 <html lang="en">
 <head>
+
 	<title>{title}</title>
 		
 	<meta charset="utf-8">	
@@ -34,7 +35,7 @@
 	</div>
 	<label for="menu"></label>
 	<nav class="infinity">
-		<?php include("inc/nav.php");?>
+		<?php include("assets/inc/nav.php");?>
 	</nav>	
 </header>
 <main>
@@ -155,7 +156,7 @@
 				<div class="row">
 					<div class="u-4-12 m-12-12 content-card">
 						<figure>
-							<a href="#"><img src="/images/card-placeholder.jpg" width="100%" height="auto"></a>
+							<a href="#"><img src="/assets/images/card-placeholder.jpg" width="100%" height="auto"></a>
 						</figure>
 						<div>
 							<span class="category">Category</span>
@@ -167,7 +168,7 @@
 					</div>
 					<div class="u-4-12 m-12-12 content-card">
 						<figure>
-							<a href="#"><img src="/images/card-placeholder.jpg" width="100%" height="auto"></a>
+							<a href="#"><img src="/assets/images/card-placeholder.jpg" width="100%" height="auto"></a>
 						</figure>
 						<div>
 							<date>28th February</date>
@@ -175,7 +176,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>							
 						</div>
 						<div class="user">
-							<a href="#" class="avatar"><img src="/images/avatar.jpg" width="50" height="50"></a>
+							<a href="#" class="avatar"><img src="/assets/images/avatar.jpg" width="50" height="50"></a>
 							<div class="name_title">
 								<span>Mark Wigglesworth</span>
 								<span>Senior Web Developer</span>
@@ -184,7 +185,7 @@
 					</div>
 					<div class="u-4-12 m-12-12 content-card">
 						<figure>
-							<a href="#"><img src="/images/card-placeholder.jpg" width="100%" height="auto"></a>
+							<a href="#"><img src="/assets/images/card-placeholder.jpg" width="100%" height="auto"></a>
 							<figcaption>
 								<span class="category">Category</span>
 								<h2 class="title"><a href="#">Revenue and Profit Rise at Google, but Mobile Struggles Continue</a></h2>
@@ -194,7 +195,7 @@
 							<date>28th February</date>
 						</div>
 						<div class="user">
-							<a href="#" class="avatar"><img src="/images/avatar.jpg" width="50" height="50"></a>
+							<a href="#" class="avatar"><img src="/assets/images/avatar.jpg" width="50" height="50"></a>
 							<div class="name_title">
 								<span>Mark Wigglesworth</span>
 								<span>Senior Web Developer</span>
@@ -355,7 +356,7 @@
 		data-tablet-zoom="14" 
 		data-mobile-zoom="12" 
 		data-info="<p><strong>Dublin, Ireland</strong></p><p>South County Business Park<br/>Leopardstown<br/>Dublin<br/>D18 T9P8</p>" 
-		data-pin="/images/icons/pin.png"></div>
+		data-pin="assets/images/icons/pin.png"></div>
 	</section>	
 </main>
 <footer>

@@ -15,11 +15,11 @@
 @if map-get($icons, "social") {
     @font-face {
         font-family: 'social';
-        src: url('../fonts/icons/social.eot?60333307');
-        src: url('../fonts/icons/social.eot?60333307#iefix') format('embedded-opentype'),
-             url('../fonts/icons/social.woff?60333307') format('woff'),
-             url('../fonts/icons/social.ttf?60333307') format('truetype'),
-             url('../fonts/icons/social.svg?60333307#brand') format('svg');
+        src: url('#{$assets}/fonts/icons/social.eot?60333307');
+        src: url('#{$assets}/fonts/icons/social.eot?60333307#iefix') format('embedded-opentype'),
+             url('#{$assets}/fonts/icons/social.woff?60333307') format('woff'),
+             url('#{$assets}/fonts/icons/social.ttf?60333307') format('truetype'),
+             url('#{$assets}/fonts/icons/social.svg?60333307#brand') format('svg');
         font-weight: normal;
         font-style: normal;
     }
@@ -56,12 +56,12 @@
 
     @font-face {
       font-family: 'arrows';
-      src: url('../fonts/icons/arrows.eot?26171170');
-      src: url('../fonts/icons/arrows.eot?26171170#iefix') format('embedded-opentype'),
-           url('../fonts/icons/arrows.woff2?26171170') format('woff2'),
-           url('../fonts/icons/arrows.woff?26171170') format('woff'),
-           url('../fonts/icons/arrows.ttf?26171170') format('truetype'),
-           url('../fonts/icons/arrows.svg?26171170#arrows') format('svg');
+      src: url('#{$assets}/fonts/icons/arrows.eot?26171170');
+      src: url('#{$assets}/fonts/icons/arrows.eot?26171170#iefix') format('embedded-opentype'),
+           url('#{$assets}/fonts/icons/arrows.woff2?26171170') format('woff2'),
+           url('#{$assets}/fonts/icons/arrows.woff?26171170') format('woff'),
+           url('#{$assets}/fonts/icons/arrows.ttf?26171170') format('truetype'),
+           url('#{$assets}/fonts/icons/arrows.svg?26171170#arrows') format('svg');
       font-weight: normal;
       font-style: normal;
     }
@@ -119,12 +119,12 @@
 
     @font-face {
       font-family: 'ui';
-      src: url('../fonts/icons/ui.eot?99857751');
-      src: url('../fonts/icons/ui.eot?99857751#iefix') format('embedded-opentype'),
-           url('../fonts/icons/ui.woff2?99857751') format('woff2'),
-           url('../fonts/icons/ui.woff?99857751') format('woff'),
-           url('../fonts/icons/ui.ttf?99857751') format('truetype'),
-           url('../fonts/icons/ui.svg?99857751#ui') format('svg');
+      src: url('#{$assets}/fonts/icons/ui.eot?99857751');
+      src: url('#{$assets}/fonts/icons/ui.eot?99857751#iefix') format('embedded-opentype'),
+           url('#{$assets}/fonts/icons/ui.woff2?99857751') format('woff2'),
+           url('#{$assets}/fonts/icons/ui.woff?99857751') format('woff'),
+           url('#{$assets}/fonts/icons/ui.ttf?99857751') format('truetype'),
+           url('#{$assets}/fonts/icons/ui.svg?99857751#ui') format('svg');
       font-weight: normal;
       font-style: normal;
     }
@@ -167,11 +167,11 @@
 
     @font-face {
         font-family: 'symbols';
-        src: url('../fonts/icons/symbols.eot?5646673');
-        src: url('../fonts/icons/symbols.eot?5646673#iefix') format('embedded-opentype'),
-             url('../fonts/icons/symbols.woff?5646673') format('woff'),
-             url('../fonts/icons/symbols.ttf?5646673') format('truetype'),
-             url('../fonts/icons/symbols.svg?5646673#symbols') format('svg');
+        src: url('#{$assets}/fonts/icons/symbols.eot?5646673');
+        src: url('#{$assets}/fonts/icons/symbols.eot?5646673#iefix') format('embedded-opentype'),
+             url('#{$assets}/fonts/icons/symbols.woff?5646673') format('woff'),
+             url('#{$assets}/fonts/icons/symbols.ttf?5646673') format('truetype'),
+             url('#{$assets}/fonts/icons/symbols.svg?5646673#symbols') format('svg');
         font-weight: normal;
         font-style: normal;
     }
